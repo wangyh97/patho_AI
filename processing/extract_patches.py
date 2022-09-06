@@ -15,7 +15,7 @@ import numpy as np
 #import matplotlib.pyplot as plt
 #get_ipython().run_line_magic('matplotlib', 'inline')
 import cv2
-
+import skimage
 from lxml import etree
 
 from pathlib import Path
@@ -26,10 +26,39 @@ import gc
 import time
 import sys
 import getopt
+import pandas as pd
 
 def get_slide(slide_path):
     slide = openslide.OpenSlide(slide_path)
     return slide
+# 提高亮度，处理异常像素点的函数
+def normalize_dynamic_range(image, percentile = 95):
+    """
+    Normalize the dynamic range of an RGB image to 0~255. If the dynamic ranges of patches 
+    from a dataset differ, apply this function before feeding images to VahadaneNormalizer,
+    e.g. hema slides.
+    :param image: A RGB image in np.ndarray with the shape [..., 3].
+    :param percentile: Percentile to get the max value.
+    """
+    max_rgb = []
+    for i in range(3):
+        value_max = np.percentile(image[..., i], percentile)
+        max_rgb.append(value_max)
+    max_rgb = np.array(max_rgb)
+
+    new_image = (np.minimum(image.astype(np.float32) * (255.0 / max_rgb), 255.0)).astype(np.uint8)
+    
+    return new_image
+
+# 定义过滤白色的函数
+def filter_blank(image, threshold = 80):
+    image_lab = skimage.color.rgb2lab(np.array(image))
+    image_mask = np.zeros(image.shape).astype(np.uint8)
+    image_mask[np.where(image_lab[:, :, 0] < threshold)] = 1
+    image_filter = np.multiply(image, image_mask)
+    percent = ((image_filter != np.array([0,0,0])).astype(float).sum(axis=2) != 0).sum() / (image_filter.shape[0]**2)
+
+    return percent
 
 #@jit(nopython=True)
 def AnnotationParser(path):
@@ -127,7 +156,7 @@ def show_thumb_mask(mask,size=512):
     return mask_scaled
 
 def get_mask_slide(masks):
-    tumor_slide = openslide.ImageSlide(Image.fromarray(masks["stroma"]))
+    tumor_slide = openslide.ImageSlide(Image.fromarray(masks["tumor"]))
     #mark_slide = openslide.ImageSlide(Image.fromarray(masks["mark"])) ## get tile_masked dont need mark and arti mask
     #arti_slide = openslide.ImageSlide(Image.fromarray(masks["artifact"]))
     return tumor_slide
@@ -139,35 +168,43 @@ def get_tiles(slide,tumor_slide,tile_size=512,overlap=False,limit_bounds=False):
     #arti_tiles = DeepZoomGenerator(arti_slide,tile_size,overlap=overlap,limit_bounds=limit_bounds)
     return slide_tiles,tumor_tiles
 #@njit
-def remove_arti_and_mask(slide_tile,tumor_tile,mark_tile,arti_tile):
-    mark_tile = np.where(mark_tile==0,1,0)
-    arti_tile = np.where(arti_tile==0,1,0)
+def remove_arti_and_mask(slide_tile,tumor_tile):
+    #mark_tile = np.where(mark_tile==0,1,0)
+    #arti_tile = np.where(arti_tile==0,1,0)
     #assert slide_tile.shape
     #slide_tile = np.array(slide_tile)
     #tumor_tile = np.array(tumor_tile)
     x = slide_tile.shape
     if not x == tumor_tile.shape:
         tumor_tile = tumor_tile[:x[0],:x[1],:]
-    if not mark_tile.shape == x:
-        mark_tile = mark_tile[:x[0],:x[1],:]
-    if not arti_tile.shape == x:
-        arti_tile = arti_tile[:x[0],:x[1],:]
-    tile = np.multiply(np.multiply(slide_tile,mark_tile),arti_tile)
+    #if not mark_tile.shape == x:
+       # mark_tile = mark_tile[:x[0],:x[1],:]
+    #if not arti_tile.shape == x:
+       # arti_tile = arti_tile[:x[0],:x[1],:]
+    #tile = np.multiply(np.multiply(slide_tile,mark_tile),arti_tile)
     #if tile[np.where(tile==np.array([0,0,0]))].shape!=(0,):
         #tile[np.where(tile==np.array([0,0,0]))]= fill
     #tile[np.where(tile==np.array([0,0,0]))] = fill # fill blank may cause color torsion
-    tile_masked= np.multiply(tile,tumor_tile)
+    tile_masked= np.multiply(slide_tile,tumor_tile)
     #tile = Image.fromarray(np.uint8(tile))
     #assert tile.size==(512,512),f"wrong shape:{tile.size}"
-    return tile,tile_masked
-
+    return slide_tile,tile_masked
 def get_tile_masked(slide_tile,tumor_tile): ####version_update: To save tile_masked, use this function
     x = slide_tile.shape
-    if not x == tumor_tile.shape:
-        tumor_tile = tumor_tile[:x[0],:x[1],:]
+    y = tumor_tile.shape
+    3
+    if not x == y:
+        h = np.min([x[0],y[0]])
+        w = np.min([x[1],y[1]])
+        tumor_tile = tumor_tile[:h,:w,:]
+        slide_tile = slide_tile[:h,:w,:]
     tile_masked = np.multiply(slide_tile,tumor_tile)
-    return tile_masked
-
+    percent = np.mean(tumor_tile)
+    tile_masked[np.all(tile_masked==0)]=255
+    return tile_masked,percent
+def filtered_same(img):### modify to purely count tumor tile
+    percent = ((img[:,:,0]==img[:,:,1]).astype(float) *(img[:,:,0]==img[:,:,2]).astype(float)).sum()/(img.shape[0]**2)
+    return percent
 def filtered(tile):
     tolerance = np.array([230,230,230])
     #tile_1 = tile.copy()
@@ -184,20 +221,18 @@ def filtered_cv(img):
     tile[np.all(tile>ret,axis=2)] = 0
     percent = ((tile != np.array([0,0,0])).astype(float).sum(axis=2)!=0).sum()/(tile.shape[0]**2)
     return percent
-def filtered_same(img):
-    percent = ((img[:,:,0]==img[:,:,1]).astype(float) *(img[:,:,0]==img[:,:,2]).astype(float)).sum()/(img.shape[0]**2)
-    return percent
+
 def filter_blood(img):
     ## lower mask(0-10)
-    img_hsv = cv.cvtColor(img,cv.COLOR_RGB2HSV)
+    img_hsv = cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
     lower_red = np.array([0,50,50])
     upper_red = np.array([10,255,255])
-    mask0 = cv.inRange(img_hsv, lower_red, upper_red)
+    mask0 = cv2.inRange(img_hsv, lower_red, upper_red)
 
     # upper mask (170-180)
     lower_red = np.array([170,50,50])
     upper_red = np.array([180,255,255])
-    mask1 = cv.inRange(img_hsv, lower_red, upper_red)
+    mask1 = cv2.inRange(img_hsv, lower_red, upper_red)
 
     # join my masks
     mask = mask0+mask1
@@ -216,7 +251,7 @@ def extract_patches(levels,scales):
         if not Path(tiledir).exists():
             os.makedirs(tiledir)
            # print("tile_dir created")
-        assert slide_tiles.level_tiles[level] == mark_tiles.level_tiles[level]
+        assert slide_tiles.level_tiles[level] == tumor_tiles.level_tiles[level]
         cols,rows = slide_tiles.level_tiles[level]
         for row in range(rows):
             for col in range(cols):
@@ -229,12 +264,13 @@ def extract_patches(levels,scales):
                     #arti_tile = np.array(arti_tiles.get_tile(level,(col,row)))
                     #print("tiles are processing")
                     #tile,tile_masked = remove_arti_and_mask(slide_tile,tumor_tile,mark_tile,arti_tile)
-                    tile_masked = get_tile_masked(slide_tile,tumor_tile)
+                    tile_masked,percent_2 = get_tile_masked(slide_tile,tumor_tile) # percent of annotated area 
                    # tile_masked = np.multiply(slide_tile,mark_tile)
-                    percent_1 = filtered_cv(tile_masked)
-                    percent_2 = filtered_same(tile_masked)
+                    percent_1 = filter_blank(tile_masked) # percent of tissue area
+                    #percent_2 = filtered_same(tile_masked)
                     percent_3 = filter_blood(tile_masked)
-                    if all((percent_1 >= 0.4,percent_2 <= 0.15,percent_3 <= 0.15)):
+
+                    if all((percent_1 >= 0.75,percent_2 >= 0.75)):
                        # Image.fromarray(np.uint8(tile)).save(tilename)
                         Image.fromarray(np.uint8(tile_masked)).save(tilename)
                         #print("saving tile")
@@ -257,12 +293,14 @@ n = 5
 
 argv = sys.argv[1:]
 try:
-    opts,args = getopt.getopt(argv,"n:i:x:")
+    opts,args = getopt.getopt(argv,"s:n:i:x:")
 except:
     print("Error")
 for opt,arg in opts:
     if opt in ['-n']:
         n = int(arg)
+    elif opt in ['-s']:
+        subset = arg
     elif opt in ['-i']:
         i = int(arg)
     elif opt in ['-x']:
@@ -270,28 +308,38 @@ for opt,arg in opts:
 
 
 TILE_SIZE = 512
+classes = ["nonprogress","progress"]
 
-sysu_path = "Pathology/SYSUCC_cases/SYSU-CancerCenter"
-zsyy_path = "Pathology/ZSYY"
-pufh_path = "Pathology/PUFH"
-tcga_path = "Pathology/TCGA_cases"
-all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
-all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
+#sysu_path = "Pathology/SYSUCC_cases/SYSU-CancerCenter"
+#zsyy_path = "Pathology/ZSYY"
+#pufh_path = "Pathology/PUFH"
+#tcga_path = "Pathology/TCGA_cases"
+#all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
+#all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
 
 
 OVERLAP =0
 LIMIT = False
-rule = {"stroma":{"excludes":["blood","artifact","mark"]}}
+rule = {"tumor":{"excludes":["blood","artifact","mark"]}}
 scales = ['5X','10X','20X','40X']
 #slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
 #patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
-slide_source = all_paths[INDEX]
-patch_path = all_patch_path[INDEX]
-svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))
+#slide_source = all_paths[INDEX]
+#patch_path = all_patch_path[INDEX]
+#svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))
 #slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #
-
+#svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
+#svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
+#df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
+#"Pathology-PRCC/data/csvs/exValidation.csv"
+#"Pathology-PRCC/data/csvs/tcga.csv"
+#"Pathology-PRCC/data/csvs/tuning.csv"
+df = pd.read_csv(f"Pathology-PRCC/data/csvs/{subset}.csv",encoding="GB2312")
+svs_paths = df["slide_name"].to_list()
+svs_labels = df["PFS status"].to_list()
 # In[7]:
-
+TILE_SIZE = 512
+patch_path = f"/GPUFS/sysu_jhluo_1/Pathology-PRCC/TempTiles2/{subset}"
 
 len(svs_paths)
 
@@ -310,11 +358,13 @@ number = len(svs_paths)
 
 if n*i < number:
     svs_paths = svs_paths[n*(i-1):n*i]
+    labels = svs_labels[n*(i-1):n*i]
 if n*i >= number:
     svs_paths = svs_paths[n*(i-1):]
-
+    labels = svs_labels[n*(i-1):]
 
 # In[7]:
+
 
 
 extracted_case = []
@@ -323,15 +373,18 @@ for i,svs in enumerate(svs_paths):
     start = time.time()
     totol_num = len(svs_paths)
     print(f"processing  {i+1}/{totol_num}:------{svs}")
+    label = labels[i]
     xml_path = str(Path(svs).with_suffix(".xml"))
-    case_name = Path(svs).parent.name
-    case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
-    tile_path = Path(case_path)/Path(svs).stem.split(".")[0]
+    center_name = Path(svs).parent.name
+    #case_name = Path(svs).parent.name
+    case_name = Path(svs).stem
+    #case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
+    tile_path = Path(patch_path)/f"{center_name}_{TILE_SIZE}"/classes[label]/case_name
     slide = get_slide(str(svs))
     try:
         masks = Annotation(slide,path=str(xml_path))
         print(f"masks groups includes :{list(masks.keys())}")
-        tumor_slide = get_mask_slide(masks)
+        tumor_slide = get_mask_slide(masks) 
         slide_tiles,tumor_tiles = get_tiles(slide,tumor_slide,tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
         del slide
         del masks
