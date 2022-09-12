@@ -1,0 +1,12 @@
+
+clin_TMB <- read.csv('~/uro_biomarker/patho_AI/config/merged_clinical_data_with_TMB.csv')
+sorted <- subset(clin_TMB,clin_TMB$treatment_type=='Pharmaceutical Therapy, NOS' & clin_TMB$days_to_death!="'--") 
+
+ID <- sorted$case_submitter_id
+day_to_death <- sorted$days_to_death
+TMB <- sorted$TMB
+
+
+plot(TMB,day_to_death,type='p',xlab = 'TMB',ylab = 'day_to_death')
+png(file = 'plot.png')
+dev.off()
