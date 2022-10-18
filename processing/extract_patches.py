@@ -7,9 +7,14 @@
 # coding: utf-8
 
 # In[4]:
-from numba import jit,njit
+# from numba import jit,njit
 
-import openslide
+import os
+if hasattr(os,'add_dll_directory'):
+    with os.add_dll_directory('D:/edge下载/openslide-win64-20220811/bin'):
+        import openslide
+else:
+    import openslide
 from openslide.deepzoom import DeepZoomGenerator
 import numpy as np
 #import matplotlib.pyplot as plt
@@ -21,7 +26,6 @@ from lxml import etree
 from pathlib import Path
 from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
-import os
 import gc
 import time
 import sys
@@ -279,136 +283,136 @@ def extract_patches(levels,scales):
         print("Done!")
     print("All levels processed!!")
     
-os.chdir("/GPUFS/sysu_jhluo_1")
+# os.chdir("/GPUFS/sysu_jhluo_1")
 
 
 
-INDEX= 0
+# INDEX= 0
 
-n = 5
+# n = 5
 
-# TCGA 159
-# SYSUCC 337
-# TCGA 470
+# # TCGA 159
+# # SYSUCC 337
+# # TCGA 470
 
-argv = sys.argv[1:]
-try:
-    opts,args = getopt.getopt(argv,"s:n:i:x:")
-except:
-    print("Error")
-for opt,arg in opts:
-    if opt in ['-n']:
-        n = int(arg)
-    elif opt in ['-s']:
-        subset = arg
-    elif opt in ['-i']:
-        i = int(arg)
-    elif opt in ['-x']:
-        INDEX = int(arg)
-
-
-TILE_SIZE = 512
-classes = ["nonprogress","progress"]
-
-#sysu_path = "Pathology/SYSUCC_cases/SYSU-CancerCenter"
-#zsyy_path = "Pathology/ZSYY"
-#pufh_path = "Pathology/PUFH"
-#tcga_path = "Pathology/TCGA_cases"
-#all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
-#all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
+# argv = sys.argv[1:]
+# try:
+#     opts,args = getopt.getopt(argv,"s:n:i:x:")
+# except:
+#     print("Error")
+# for opt,arg in opts:
+#     if opt in ['-n']:
+#         n = int(arg)  #n后面承接一个数值
+#     elif opt in ['-s']:
+#         subset = arg  #s后面承接的是subsets，这里的是TCGA_BLCA及TCGA_BLCA_S两个分开的数据集
+#     elif opt in ['-i']:
+#         i = int(arg)  #i后面承接一个数值
+#     elif opt in ['-x']:
+#         INDEX = int(arg)  #x后面承接一个数值,表示index
 
 
-OVERLAP =0
-LIMIT = False
-rule = {"tumor":{"excludes":["blood","artifact","mark"]}}
-scales = ['5X','10X','20X','40X']
-#slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
-#patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
-#slide_source = all_paths[INDEX]
-#patch_path = all_patch_path[INDEX]
-#svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))
-#slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #
-#svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
-#svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
-#df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
-#"Pathology-PRCC/data/csvs/exValidation.csv"
-#"Pathology-PRCC/data/csvs/tcga.csv"
-#"Pathology-PRCC/data/csvs/tuning.csv"
-df = pd.read_csv(f"Pathology-PRCC/data/csvs/{subset}.csv",encoding="GB2312")
-svs_paths = df["slide_name"].to_list()
-svs_labels = df["PFS status"].to_list()
-# In[7]:
-TILE_SIZE = 512
-patch_path = f"/GPUFS/sysu_jhluo_1/Pathology-PRCC/TempTiles2/{subset}"
+# TILE_SIZE = 512
+# classes = ["nonprogress","progress"]
 
-len(svs_paths)
-
-# # i=??
-
-# In[ ]:
+# #sysu_path = "Pathology/SYSUCC_cases/SYSU-CancerCenter"
+# #zsyy_path = "Pathology/ZSYY"
+# #pufh_path = "Pathology/PUFH"
+# #tcga_path = "Pathology/TCGA_cases"
+# #all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
+# #all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
 
 
+# OVERLAP =0
+# LIMIT = False
+# rule = {"tumor":{"excludes":["blood","artifact","mark"]}}
+# scales = ['5X','10X','20X','40X']
+# #slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
+# #patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
+# #slide_source = all_paths[INDEX]
+# #patch_path = all_patch_path[INDEX]
+# #svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))
+# #slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #
+# #svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
+# #svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
+# #df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
+# #"Pathology-PRCC/data/csvs/exValidation.csv"
+# #"Pathology-PRCC/data/csvs/tcga.csv"
+# #"Pathology-PRCC/data/csvs/tuning.csv"
+# df = pd.read_csv(f"Pathology-PRCC/data/csvs/{subset}.csv",encoding="GB2312")
+# svs_paths = df["slide_name"].to_list()
+# svs_labels = df["PFS status"].to_list()
+# # In[7]:
+# TILE_SIZE = 512
+# patch_path = f"/GPUFS/sysu_jhluo_1/Pathology-PRCC/TempTiles2/{subset}"
 
+# len(svs_paths)
 
-# In[5]:
+# # # i=??
+
+# # In[ ]:
 
 
 
-number = len(svs_paths)
 
-if n*i < number:
-    svs_paths = svs_paths[n*(i-1):n*i]
-    labels = svs_labels[n*(i-1):n*i]
-if n*i >= number:
-    svs_paths = svs_paths[n*(i-1):]
-    labels = svs_labels[n*(i-1):]
-
-# In[7]:
+# # In[5]:
 
 
 
-extracted_case = []
-un_extracted_case = []
-for i,svs in enumerate(svs_paths):
-    start = time.time()
-    totol_num = len(svs_paths)
-    print(f"processing  {i+1}/{totol_num}:------{svs}")
-    label = labels[i]
-    xml_path = str(Path(svs).with_suffix(".xml"))
-    center_name = Path(svs).parent.name
-    #case_name = Path(svs).parent.name
-    case_name = Path(svs).stem
-    #case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
-    tile_path = Path(patch_path)/f"{center_name}_{TILE_SIZE}"/classes[label]/case_name
-    slide = get_slide(str(svs))
-    try:
-        masks = Annotation(slide,path=str(xml_path))
-        print(f"masks groups includes :{list(masks.keys())}")
-        tumor_slide = get_mask_slide(masks) 
-        slide_tiles,tumor_tiles = get_tiles(slide,tumor_slide,tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
-        del slide
-        del masks
-        del tumor_slide
-        gc.collect()
-        level_count = slide_tiles.level_count
-        #fill = int(np.array(slide_tiles.get_tile(level_count-1,(0,0))).mean())
-        levels=[level_count-4,level_count-3,level_count-2,level_count-1]
-        #print(f"fill_blank_value:{fill}")
+# number = len(svs_paths)
 
-        try:
-            extract_patches(levels,scales)
-            extracted_case.append(svs)
-        except Exception as e:
-            un_extracted_case.append(svs)
-            print("something is wrong when extracting")
-            print("ERROR!",e)
-            continue
-    except Exception as e:
-        print("something is wrong when parsing")
-        print("ERROR!",e)
-        continue
-    end = time.time()
-    print(f"Time consumed : {(end-start)/60} min")
-    print(f"******{len(un_extracted_case)}/{len(svs_paths)} remain unextract******")
+# if n*i < number:
+#     svs_paths = svs_paths[n*(i-1):n*i]
+#     labels = svs_labels[n*(i-1):n*i]
+# if n*i >= number:
+#     svs_paths = svs_paths[n*(i-1):]
+#     labels = svs_labels[n*(i-1):]
+
+# # In[7]:
+
+
+
+# extracted_case = []
+# un_extracted_case = []
+# for i,svs in enumerate(svs_paths):
+#     start = time.time()
+#     totol_num = len(svs_paths)
+#     print(f"processing  {i+1}/{totol_num}:------{svs}")
+#     label = labels[i]
+#     xml_path = str(Path(svs).with_suffix(".xml"))
+#     center_name = Path(svs).parent.name
+#     #case_name = Path(svs).parent.name
+#     case_name = Path(svs).stem
+#     #case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
+#     tile_path = Path(patch_path)/f"{center_name}_{TILE_SIZE}"/classes[label]/case_name
+#     slide = get_slide(str(svs))
+#     try:
+#         masks = Annotation(slide,path=str(xml_path))
+#         print(f"masks groups includes :{list(masks.keys())}")
+#         tumor_slide = get_mask_slide(masks) 
+#         slide_tiles,tumor_tiles = get_tiles(slide,tumor_slide,tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
+#         del slide
+#         del masks
+#         del tumor_slide
+#         gc.collect()
+#         level_count = slide_tiles.level_count
+#         #fill = int(np.array(slide_tiles.get_tile(level_count-1,(0,0))).mean())
+#         levels=[level_count-4,level_count-3,level_count-2,level_count-1]
+#         #print(f"fill_blank_value:{fill}")
+
+#         try:
+#             extract_patches(levels,scales)
+#             extracted_case.append(svs)
+#         except Exception as e:
+#             un_extracted_case.append(svs)
+#             print("something is wrong when extracting")
+#             print("ERROR!",e)
+#             continue
+#     except Exception as e:
+#         print("something is wrong when parsing")
+#         print("ERROR!",e)
+#         continue
+#     end = time.time()
+#     print(f"Time consumed : {(end-start)/60} min")
+#     print(f"******{len(un_extracted_case)}/{len(svs_paths)} remain unextract******")
 
 
