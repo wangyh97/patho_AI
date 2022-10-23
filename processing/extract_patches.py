@@ -9,10 +9,15 @@
 # In[4]:
 # from numba import jit,njit
 
+openslide_path = {'desktop':'D:/edge下载/openslide-win64-20220811/bin',
+                'laptop':'E:/openslide-win64-20171122/bin'}
 import os
+from pathlib import Path
 if hasattr(os,'add_dll_directory'):
-    with os.add_dll_directory('D:/edge下载/openslide-win64-20220811/bin'):
-        import openslide
+    for i in openslide_path.values():
+        if Path(i).exists():
+            with os.add_dll_directory(Path(i)):
+                import openslide
 else:
     import openslide
 from openslide.deepzoom import DeepZoomGenerator
