@@ -130,6 +130,7 @@ def Annotation(slide,path,save_path=None,rule=False,save=False):
     def export_masks(save_path):
         for cls in masks.keys():
             export_mask(save_path,cls)
+            
     def exclude_masks(masks,rule,classes):
         #masks_exclude = masks.copy()
         masks_exclude = masks
@@ -150,10 +151,15 @@ def Annotation(slide,path,save_path=None,rule=False,save=False):
         #exclude_masks(rule)
     if save:
         export_masks(save_path)
-    if "artifact" not in classes:
-        masks["artifact"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
-    if "mark" not in classes:
-        masks["mark"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
+    
+    if "artificial" not in classes:
+        masks["artificial"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
+    if "necrosis" not in classes:
+        masks["necrosis"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8) 
+        #TODO:这里要不要stroma？如何识别全片区域  
+    if "stroma" not in classes:
+        masks["stroma"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
+
     return masks 
 
 def show_thumb_mask(mask,size=512):
