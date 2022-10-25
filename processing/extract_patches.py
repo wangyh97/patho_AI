@@ -27,6 +27,7 @@ import numpy as np
 import cv2
 import skimage
 from lxml import etree
+from matplotlib import pyplot as plt
 
 from pathlib import Path
 from PIL import Image
