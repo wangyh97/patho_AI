@@ -150,11 +150,13 @@ def Annotation(slide,path,save_path=None,rule=False,save=False):
         #exclude_masks(rule)
     if save:
         export_masks(save_path)
-    if "artifact" not in classes:
-        masks["artifact"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
-    if "mark" not in classes:
-        masks["mark"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
-    return masks 
+    if "artificial" not in classes:
+        masks["artificial"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
+    if "necrosis" not in classes:
+        masks["necrosis"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
+    if 'stroma' not in classes:
+        masks['stroma'] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
+    return masks
 
 def show_thumb_mask(mask,size=512):
     #mask = masks[cls]
@@ -166,7 +168,7 @@ def show_thumb_mask(mask,size=512):
     return mask_scaled
 
 def get_mask_slide(masks):
-    tumor_slide = openslide.ImageSlide(Image.fromarray(masks["tumor"]))
+    tumor_slide = openslide.ImageSlide(Image.fromarray(masks['tumor']))
     #mark_slide = openslide.ImageSlide(Image.fromarray(masks["mark"])) ## get tile_masked dont need mark and arti mask
     #arti_slide = openslide.ImageSlide(Image.fromarray(masks["artifact"]))
     return tumor_slide
