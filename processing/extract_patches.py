@@ -290,147 +290,149 @@ def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles):
         print("Done!")
     print("All levels processed!!")
     
-# os.chdir("/home/wangyh/uro_biomarker/patho_AI")
+working_dir = '/home/wangyh/uro_biomarker/patho_AI'
+os.chdir(working_dir)
 
 
 
-# INDEX= 0
+INDEX= 0
 
-# n = 5
+n = 5
 
-# # TCGA 388
+# TCGA 388
 
-# argv = sys.argv[1:]
-# try:
-#     opts,args = getopt.getopt(argv,"s:n:i:x:")
-# except:
-#     print("Error")
-# for opt,arg in opts:
-#     if opt in ['-n']:
-#         n = int(arg)  #n后面承接一个数值
-#     elif opt in ['-s']:
-#         subset = arg  #s后面承接的是subsets，这里的是TCGA_BLCA及TCGA_BLCA_S两个分开的数据集
-#     elif opt in ['-i']:
-#         i = int(arg)  #i后面承接一个数值
-#     elif opt in ['-x']:
-#         INDEX = int(arg)  #x后面承接一个数值,表示index
+argv = sys.argv[1:]
+try:
+    opts,args = getopt.getopt(argv,"s:n:i:x:")
+except:
+    print("Error")
+for opt,arg in opts:
+    if opt in ['-n']:
+        n = int(arg)  #n后面承接一个数值
+    elif opt in ['-s']:
+        subset = arg  #s后面承接的是subsets，这里的是TCGA_BLCA及TCGA_BLCA_S两个分开的数据集
+    elif opt in ['-i']:
+        i = int(arg)  #i后面承接一个数值
+    elif opt in ['-x']:
+        INDEX = int(arg)  #x后面承接一个数值,表示index
 
 
 # TILE_SIZE = 512
 
 # TODO:改classes
-# classes = ["nonprogress","progress"]
+classes = ["nonprogress","progress"]
 
 # TODO：改tcga_path
-# #tcga_path = "Pathology/TCGA_cases"   #TCGA svs放置路径
+# tcga_path = "    "   #TCGA svs放置路径
 
-#下面可弃用，没有多个图片源
-#all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
-#all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
+# 下面可弃用，没有多个图片源
+# all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
+# all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
 
 
-# OVERLAP =0
-# LIMIT = False
-# rule =  {"tumor":{"excludes":["artificial","stroma","necrosis"]},
-#         'stroma':{"excludes":['artificial','necrosis']}}
-# scales = ['5X','10X','20X','40X']
+OVERLAP =0
+LIMIT = False
+rule =  {"tumor":{"excludes":["artificial","stroma","necrosis"]},
+        'stroma':{"excludes":['artificial','necrosis']}}
+scales = ['5X','10X','20X','40X']
 
-# TODO:赋值
 # slide_source = 'TCGA svs图片路径'
 # patch_path = '存放patch的路径'
 
-# #slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
-# #patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
-# #slide_source = all_paths[INDEX]
-# #patch_path = all_patch_path[INDEX]
+#slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
+#patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
+#slide_source = all_paths[INDEX]
+#patch_path = all_patch_path[INDEX]
 
-#TODO:修改获取svspaths的路径表达
-# #svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))  #获取TCGAsvs文件夹下的svspath路径，也可以直接从配置文件读取
-# #slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #可以直接读取配置文件，配置文件中经过标注的图片已标记
+# TODO:修改获取svspaths的路径表达
+#svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))  #获取TCGAsvs文件夹下的svspath路径，也可以直接从配置文件读取
+#slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #可以直接读取配置文件，配置文件中经过标注的图片已标记
 
 
-#下列不需要
-# #svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
-# #svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
-# #df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
-# #"Pathology-PRCC/data/csvs/exValidation.csv"
-# #"Pathology-PRCC/data/csvs/tcga.csv"
-# #"Pathology-PRCC/data/csvs/tuning.csv"
-# df = pd.read_csv(f"Pathology-PRCC/data/csvs/{subset}.csv",encoding="GB2312")
-# svs_paths = df["slide_name"].to_list()
-# svs_labels = df["PFS status"].to_list()
-# # In[7]:
-# TILE_SIZE = 512
-# patch_path = f"/GPUFS/sysu_jhluo_1/Pathology-PRCC/TempTiles2/{subset}"
+# 下列不需要
+#svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
+#svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
+#df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
+#"Pathology-PRCC/data/csvs/exValidation.csv"
+#"Pathology-PRCC/data/csvs/tcga.csv"
+#"Pathology-PRCC/data/csvs/tuning.csv"
+#TODO:将svspath及svslabels存放在一个csv中
+df = pd.read_csv(f" ========= csvpath =========.csv",encoding="GB2312")
+svs_paths = df["slide_name"].to_list()
+svs_labels = df["PFS status"].to_list()
+# In[7]:
+TILE_SIZE = 512
+#TODO:建立一个名为patches的文件夹
+patch_path = f"{working_dir}/patches}"
 
 # len(svs_paths)
 
-# # # i=??
+# # i=??
 
-# # In[ ]:
+# In[ ]:
 # get_mask
 
 
 
-# # In[5]:
+# In[5]:
 
 
 
-# number = len(svs_paths)
+number = len(svs_paths)
 
-# if n*i < number:
-#     svs_paths = svs_paths[n*(i-1):n*i]
-#     labels = svs_labels[n*(i-1):n*i]
-# if n*i >= number:
-#     svs_paths = svs_paths[n*(i-1):]
-#     labels = svs_labels[n*(i-1):]
+if n*i < number:
+    svs_paths = svs_paths[n*(i-1):n*i]
+    labels = svs_labels[n*(i-1):n*i]
+if n*i >= number:
+    svs_paths = svs_paths[n*(i-1):]
+    labels = svs_labels[n*(i-1):]
 
-# # In[7]:
+# In[7]:
 
 
 
-# extracted_case = []
-# un_extracted_case = []
-# for i,svs in enumerate(svs_paths):
-#     start = time.time()
-#     totol_num = len(svs_paths)
-#     print(f"processing  {i+1}/{totol_num}:------{svs}")
-#     label = labels[i]
-#     xml_path = str(Path(svs).with_suffix(".xml"))
-#     center_name = Path(svs).parent.name
-#     #case_name = Path(svs).parent.name
-#     case_name = Path(svs).stem
-#     #case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
-#     tile_path = Path(patch_path)/f"{center_name}_{TILE_SIZE}"/classes[label]/case_name
-#     slide = get_slide(str(svs))
-#     try:
-#         masks = Annotation(slide,path=str(xml_path))
-#         print(f"masks groups includes :{list(masks.keys())}")
-#         tumor_slide = get_mask_slide(masks) 
-#         slide_tiles,tumor_tiles = get_tiles(slide,tumor_slide,tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
-#         del slide
-#         del masks
-#         del tumor_slide
-#         gc.collect()
-#         level_count = slide_tiles.level_count
-#         #fill = int(np.array(slide_tiles.get_tile(level_count-1,(0,0))).mean())
-#         levels=[level_count-4,level_count-3,level_count-2,level_count-1]
-#         #print(f"fill_blank_value:{fill}")
+extracted_case = []
+un_extracted_case = []
+for i,svs in enumerate(svs_paths):
+    start = time.time()
+    totol_num = len(svs_paths)
+    print(f"processing  {i+1}/{totol_num}:------{svs}")
+    label = labels[i]
+    xml_path = str(Path(svs).with_suffix(".xml"))
+    center_name = Path(svs).parent.name
+    #case_name = Path(svs).parent.name
+    case_name = Path(svs).stem
+    #case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
+    tile_path = Path(patch_path)/f"{center_name}_{TILE_SIZE}"/classes[label]/case_name
+    slide = get_slide(str(svs))
+    try:
+        masks = Annotation(slide,path=str(xml_path))
+        print(f"masks groups includes :{list(masks.keys())}")
+        tumor_slide = get_mask_slide(masks) 
+        slide_tiles,tumor_tiles = get_tiles(slide,tumor_slide,tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
+        del slide
+        del masks
+        del tumor_slide
+        gc.collect()
+        level_count = slide_tiles.level_count
+        #fill = int(np.array(slide_tiles.get_tile(level_count-1,(0,0))).mean())
+        levels=[level_count-4,level_count-3,level_count-2,level_count-1]
+        #print(f"fill_blank_value:{fill}")
 
-#         try:
-#             extract_patches(levels,scales)
-#             extracted_case.append(svs)
-#         except Exception as e:
-#             un_extracted_case.append(svs)
-#             print("something is wrong when extracting")
-#             print("ERROR!",e)
-#             continue
-#     except Exception as e:
-#         print("something is wrong when parsing")
-#         print("ERROR!",e)
-#         continue
-#     end = time.time()
-#     print(f"Time consumed : {(end-start)/60} min")
-#     print(f"******{len(un_extracted_case)}/{len(svs_paths)} remain unextract******")
+        try:
+            extract_patches(levels,scales)
+            extracted_case.append(svs)
+        except Exception as e:
+            un_extracted_case.append(svs)
+            print("something is wrong when extracting")
+            print("ERROR!",e)
+            continue
+    except Exception as e:
+        print("something is wrong when parsing")
+        print("ERROR!",e)
+        continue
+    end = time.time()
+    print(f"Time consumed : {(end-start)/60} min")
+    print(f"******{len(un_extracted_case)}/{len(svs_paths)} remain unextract******")
 
 
