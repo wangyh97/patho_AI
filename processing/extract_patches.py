@@ -204,7 +204,6 @@ def remove_arti_and_mask(slide_tile,tumor_tile):
 def get_tile_masked(slide_tile,tumor_tile): ####version_update: To save tile_masked, use this function
     x = slide_tile.shape
     y = tumor_tile.shape
-    3
     if not x == y:
         h = np.min([x[0],y[0]])
         w = np.min([x[1],y[1]])
@@ -251,7 +250,7 @@ def filter_blood(img):
     percent = ((mask != 0)).sum()/mask.shape[0]**2
     return percent
 #@jit(nopython=True)
-def extract_patches(levels,scales):
+def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles):
     
     for i,level in enumerate(levels):
         
@@ -291,7 +290,7 @@ def extract_patches(levels,scales):
         print("Done!")
     print("All levels processed!!")
     
-# os.chdir("/GPUFS/sysu_jhluo_1")
+# os.chdir("/home/wangyh/uro_biomarker/patho_AI")
 
 
 
@@ -299,9 +298,7 @@ def extract_patches(levels,scales):
 
 # n = 5
 
-# # TCGA 159
-# # SYSUCC 337
-# # TCGA 470
+# # TCGA 388
 
 # argv = sys.argv[1:]
 # try:
@@ -320,26 +317,39 @@ def extract_patches(levels,scales):
 
 
 # TILE_SIZE = 512
+
+# TODO:改classes
 # classes = ["nonprogress","progress"]
 
-# #sysu_path = "Pathology/SYSUCC_cases/SYSU-CancerCenter"
-# #zsyy_path = "Pathology/ZSYY"
-# #pufh_path = "Pathology/PUFH"
-# #tcga_path = "Pathology/TCGA_cases"
-# #all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
-# #all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
+# TODO：改tcga_path
+# #tcga_path = "Pathology/TCGA_cases"   #TCGA svs放置路径
+
+#下面可弃用，没有多个图片源
+#all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
+#all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
 
 
 # OVERLAP =0
 # LIMIT = False
-# rule = {"tumor":{"excludes":["blood","artifact","mark"]}}
+# rule =  {"tumor":{"excludes":["artificial","stroma","necrosis"]},
+#         'stroma':{"excludes":['artificial','necrosis']}}
 # scales = ['5X','10X','20X','40X']
+
+# TODO:赋值
+# slide_source = 'TCGA svs图片路径'
+# patch_path = '存放patch的路径'
+
 # #slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
 # #patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
 # #slide_source = all_paths[INDEX]
 # #patch_path = all_patch_path[INDEX]
-# #svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))
-# #slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #
+
+#TODO:修改获取svspaths的路径表达
+# #svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))  #获取TCGAsvs文件夹下的svspath路径，也可以直接从配置文件读取
+# #slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #可以直接读取配置文件，配置文件中经过标注的图片已标记
+
+
+#下列不需要
 # #svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
 # #svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
 # #df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
@@ -358,7 +368,7 @@ def extract_patches(levels,scales):
 # # # i=??
 
 # # In[ ]:
-
+# get_mask
 
 
 
