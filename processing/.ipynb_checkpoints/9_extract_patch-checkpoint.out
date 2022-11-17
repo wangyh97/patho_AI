@@ -1,0 +1,5 @@
+processing  1/39:------/home/wangyh/uro_biomarker/patho_AI/TCGA_svs/TCGA_bladder/409bca43-add7-4c7f-9e4e-483e459a242b/TCGA-XF-A9SJ-01Z-00-DX1.AED4FF1B-441D-47EE-B7E5-CC6C595D3D98.svs
+Traceback (most recent call last):
+  File "extract_patches.py", line 417, in <module>
+    case_name = uuid[i]
+NameError: name 'uuid' is not defined

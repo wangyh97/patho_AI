@@ -9,8 +9,8 @@
 # In[4]:
 # from numba import jit,njit
 
-openslide_path = {'desktop':'D:/edge下载/openslide-win64-20220811/bin',
-                'laptop':'E:/openslide-win64-20171122/bin'}
+openslide_path = {'desktop':r'D:/edge下载/openslide-win64-20220811/bin',
+                'laptop':r'E:/openslide-win64-20171122/bin'}
 import os
 from pathlib import Path
 if hasattr(os,'add_dll_directory'):
@@ -169,16 +169,20 @@ def show_thumb_mask(mask,size=512):
 
 def get_mask_slide(masks):
     tumor_slide = openslide.ImageSlide(Image.fromarray(masks['tumor']))
+    non_tumor_slide = openslide.ImageSlide(Image.fromarray(cv2.bitwise_not(masks['tumor'])))
     #mark_slide = openslide.ImageSlide(Image.fromarray(masks["mark"])) ## get tile_masked dont need mark and arti mask
     #arti_slide = openslide.ImageSlide(Image.fromarray(masks["artifact"]))
-    return tumor_slide
+    return (tumor_slide,non_tumor_slide)
 
-def get_tiles(slide,tumor_slide,tile_size=512,overlap=False,limit_bounds=False):
+def get_tiles(slide,tumor_slide,tile_size=512,overlap=False,limit_bounds=False,slide_tile = False):
     slide_tiles = DeepZoomGenerator(slide,tile_size,overlap=overlap,limit_bounds=limit_bounds)
     tumor_tiles = DeepZoomGenerator(tumor_slide,tile_size,overlap=overlap,limit_bounds=limit_bounds)
     #mark_tiles = DeepZoomGenerator(mark_slide,tile_size,overlap=overlap,limit_bounds=limit_bounds)
     #arti_tiles = DeepZoomGenerator(arti_slide,tile_size,overlap=overlap,limit_bounds=limit_bounds)
-    return slide_tiles,tumor_tiles
+    if slide_tile:
+        return slide_tiles,tumor_tiles
+    else:
+        return tumor_tiles
 #@njit
 def remove_arti_and_mask(slide_tile,tumor_tile):
     #mark_tile = np.where(mark_tile==0,1,0)
@@ -250,11 +254,13 @@ def filter_blood(img):
     percent = ((mask != 0)).sum()/mask.shape[0]**2
     return percent
 #@jit(nopython=True)
-def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles):
+def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles,tumor=True):
     
     for i,level in enumerate(levels):
-        
-        print(f'processing ---level {scales[i]}')
+        if tumor:
+            print(f'processing ---level {scales[i]},tumor tiles')
+        else:
+            print(f'processing ---level {scales[i]},non-tumor tiles')
         print(tile_path)
         tiledir = Path(tile_path)/str(scales[i])
         #print(f"tile_dir creating--{tiledir}")
@@ -266,7 +272,10 @@ def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles):
         cols,rows = slide_tiles.level_tiles[level]
         for row in range(rows):
             for col in range(cols):
-                tilename = os.path.join(tiledir,'%d_%d.%s'%(col,row,"tiff"))
+                if tumor:
+                    tilename = os.path.join(tiledir,'%s_%d_%d.%s'%('T',col,row,"tiff"))
+                else:
+                    tilename = os.path.join(tiledir,'%s_%d_%d.%s'%('nonT',col,row,"tiff"))
                # print("tile_name creating")
                 if not Path(tilename).exists():
                     slide_tile = np.array(slide_tiles.get_tile(level,(col,row)))
@@ -275,11 +284,11 @@ def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles):
                     #arti_tile = np.array(arti_tiles.get_tile(level,(col,row)))
                     #print("tiles are processing")
                     #tile,tile_masked = remove_arti_and_mask(slide_tile,tumor_tile,mark_tile,arti_tile)
-                    tile_masked,percent_2 = get_tile_masked(slide_tile,tumor_tile) # percent of annotated area 
+                    tile_masked,percent_2 = get_tile_masked(slide_tile,tumor_tile) # percent of annotated area       
                    # tile_masked = np.multiply(slide_tile,mark_tile)
                     percent_1 = filter_blank(tile_masked) # percent of tissue area
                     #percent_2 = filtered_same(tile_masked)
-                    percent_3 = filter_blood(tile_masked)
+                  #  percent_3 = filter_blood(tile_masked)
 
                     if all((percent_1 >= 0.75,percent_2 >= 0.75)):
                        # Image.fromarray(np.uint8(tile)).save(tilename)
@@ -307,20 +316,20 @@ try:
 except:
     print("Error")
 for opt,arg in opts:
-    if opt in ['-n']:
+    if opt in ['-n']: #代表chunksize
         n = int(arg)  #n后面承接一个数值
     elif opt in ['-s']:
         subset = arg  #s后面承接的是subsets，这里的是TCGA_BLCA及TCGA_BLCA_S两个分开的数据集
-    elif opt in ['-i']:
-        i = int(arg)  #i后面承接一个数值
-    elif opt in ['-x']:
+  #  elif opt in ['-i']:
+       # i = int(arg)  #i后面承接一个数值
+    elif opt in ['-i']: ## 用INDEX 表示每个chunk的序数
         INDEX = int(arg)  #x后面承接一个数值,表示index
 
 
 # TILE_SIZE = 512
 
 # TODO:改classes
-classes = ["nonprogress","progress"]
+# classes = ["nonprogress","progress"]
 
 # TODO：改tcga_path
 # tcga_path = "    "   #TCGA svs放置路径
@@ -356,14 +365,16 @@ scales = ['5X','10X','20X','40X']
 #"Pathology-PRCC/data/csvs/exValidation.csv"
 #"Pathology-PRCC/data/csvs/tcga.csv"
 #"Pathology-PRCC/data/csvs/tuning.csv"
+
 #TODO:将svspath及svslabels存放在一个csv中
-df = pd.read_csv(f" ========= csvpath =========.csv",encoding="GB2312")
-svs_paths = df["slide_name"].to_list()
-svs_labels = df["PFS status"].to_list()
+df = pd.read_csv('/home/wangyh/uro_biomarker/patho_AI/config/full.csv')
+svs_paths = df['svs_paths']
+labels = df['TMB_H/L']
+uuid = df['dir_uuid']
 # In[7]:
 TILE_SIZE = 512
-#TODO:建立一个名为patches的文件夹
-patch_path = f"{working_dir}/patches}"
+
+patch_path = "/mnt/wangyh/TCGA_patches/"
 
 # len(svs_paths)
 
@@ -380,39 +391,47 @@ patch_path = f"{working_dir}/patches}"
 
 number = len(svs_paths)
 
-if n*i < number:
-    svs_paths = svs_paths[n*(i-1):n*i]
-    labels = svs_labels[n*(i-1):n*i]
-if n*i >= number:
-    svs_paths = svs_paths[n*(i-1):]
-    labels = svs_labels[n*(i-1):]
-
+#if n*INDEX < number:
+#    svs_paths = svs_paths[n*(INDEX-1):n*i]
+    #labels = svs_labels[n*(i-1):n*i]
+#if n*INDEX >= number:
+ #   svs_paths = svs_paths[n*(INDEX-1):]
+    #labels = svs_labels[n*(i-1):]
+svs_paths = svs_paths[n*(INDEX-1):n*INDEX] #不用加条件
 # In[7]:
 
 
 
 extracted_case = []
 un_extracted_case = []
-for i,svs in enumerate(svs_paths):
+for i,svs in enumerate(svs_paths):  #svs是一个svs图像路径的str
     start = time.time()
     totol_num = len(svs_paths)
     print(f"processing  {i+1}/{totol_num}:------{svs}")
-    label = labels[i]
-    xml_path = str(Path(svs).with_suffix(".xml"))
-    center_name = Path(svs).parent.name
-    #case_name = Path(svs).parent.name
-    case_name = Path(svs).stem
-    #case_path = Path(patch_path)/Path(svs).parent.parent.name/case_name
-    tile_path = Path(patch_path)/f"{center_name}_{TILE_SIZE}"/classes[label]/case_name
+    
+    #路径操作
+   # label = labels[i]
+    label = df.loc[df['svs_paths']==svs]['TMB_H/L'].to_list()[0] ## 在这里用svs_path来取label的值
+    xml_path = Path(svs).with_suffix('.xml')   #返回一个path
+    #构造存放patch的目录，目录的结构为
+    case_name = uuid[i]
+#     case_name = Path(svs).parent.name
+    tile_path = Path(patch_path)/label/case_name
+    
+    #提取操作
     slide = get_slide(str(svs))
     try:
         masks = Annotation(slide,path=str(xml_path))
         print(f"masks groups includes :{list(masks.keys())}")
-        tumor_slide = get_mask_slide(masks) 
-        slide_tiles,tumor_tiles = get_tiles(slide,tumor_slide,tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
+        tumor_XOR = get_mask_slide(masks)    #返回一个tuple，第一个是tumor_slide，第二个是non_tumor_slide，两个都是Imageslide
+        
+        #获得dzg对象                                      
+        tumor_tiles = get_tiles(slide,tumor_XOR[0],tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
+        slide_tiles,non_tumor_tiles = get_tiles(slide,tumor_XOR[1],tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT,slide_tile=True)
+                                           
         del slide
         del masks
-        del tumor_slide
+        del tumor_XOR
         gc.collect()
         level_count = slide_tiles.level_count
         #fill = int(np.array(slide_tiles.get_tile(level_count-1,(0,0))).mean())
@@ -420,7 +439,8 @@ for i,svs in enumerate(svs_paths):
         #print(f"fill_blank_value:{fill}")
 
         try:
-            extract_patches(levels,scales)
+            extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles)
+            extract_patches(levels,scales,tile_path,slide_tiles,non_tumor_tiles,tumor=False)
             extracted_case.append(svs)
         except Exception as e:
             un_extracted_case.append(svs)
@@ -436,3 +456,5 @@ for i,svs in enumerate(svs_paths):
     print(f"******{len(un_extracted_case)}/{len(svs_paths)} remain unextract******")
 
 
+#unextracted cases:
+#1:f4ca3ddd-dc53-4ab0-b55b-942603b64e57
