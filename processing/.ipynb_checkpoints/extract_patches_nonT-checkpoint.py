@@ -169,7 +169,7 @@ def show_thumb_mask(mask,size=512):
 
 def get_mask_slide(masks):
     tumor_slide = openslide.ImageSlide(Image.fromarray(masks['tumor']))
-    non_tumor_slide = openslide.ImageSlide(Image.fromarray(cv2.bitwise_not(masks['tumor'])-254))
+    non_tumor_slide = openslide.ImageSlide(Image.fromarray(cv2.bitwise_not(masks['tumor'])))
     #mark_slide = openslide.ImageSlide(Image.fromarray(masks["mark"])) ## get tile_masked dont need mark and arti mask
     #arti_slide = openslide.ImageSlide(Image.fromarray(masks["artifact"]))
     return (tumor_slide,non_tumor_slide)

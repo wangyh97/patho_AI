@@ -426,7 +426,7 @@ for i,svs in enumerate(svs_paths):  #svs是一个svs图像路径的str
         tumor_XOR = get_mask_slide(masks)    #返回一个tuple，第一个是tumor_slide，第二个是non_tumor_slide，两个都是Imageslide
         
         #获得dzg对象                                      
-        tumor_tiles = get_tiles(slide,tumor_XOR[0],tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
+#         tumor_tiles = get_tiles(slide,tumor_XOR[0],tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT)
         slide_tiles,non_tumor_tiles = get_tiles(slide,tumor_XOR[1],tile_size=TILE_SIZE,overlap=OVERLAP,limit_bounds=LIMIT,slide_tile=True)
                                            
         del slide
@@ -439,7 +439,7 @@ for i,svs in enumerate(svs_paths):  #svs是一个svs图像路径的str
         #print(f"fill_blank_value:{fill}")
 
         try:
-            extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles)
+#             extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles)
             extract_patches(levels,scales,tile_path,slide_tiles,non_tumor_tiles,tumor=False)
             extracted_case.append(svs)
         except Exception as e:
