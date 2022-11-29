@@ -1,44 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-
-import pandas as pd 
-import numpy as np
-#import matplotlib.pyplot as plt
-import os
-from pathlib import Path
-
-from pathlib import Path
-from PIL import Image
-import os
-import glob
-import random
-import sys
-import getopt
-
 import cupy as cp
-import tifffile as tif
-import cv2
-import gc
-from tqdm import tqdm
-import staintools 
-
-#!/usr/bin/env python
-# coding: utf-8
-# os.chdir("/GPUFS/sysu_jhluo_1/")
-argv = sys.argv[1:]
-opts,args = getopt.getopt(argv,'c:l:i:n:')
-for opt,arg in opts:
-    if opt in ['-c']:
-        center = arg # ["SYSUCC","SYSUFAH"]
-    elif opt in ['-l']:
-        LEVEL= arg # [20X/40X]
-    elif opt in ["-i"]:
-        INDEX=int(arg) # for indexing
-    elif opt in ["-n"]:
-        n = int(arg)
-os.environ["CUDA_VISIBLE_DEVICES"] = f"{INDEX-1}"
-
 
 class HENormalizer:
     def fit(self, target):
@@ -140,7 +103,7 @@ class Normalizer(HENormalizer):
             A method for normalizing histology slides for quantitative analysis. M.
             Macenko et al., ISBI 2009
         '''
-       # I = cp.asarray(I)
+        I = cp.asarray(I)
         batch,h, w, c = I.shape
         I = I.reshape((-1,3))
 
@@ -157,72 +120,3 @@ class Normalizer(HENormalizer):
 
 
         return Inorm
-
-
-
-        
-
-
-classes_to_index = {'nonprogress':0,'progress':1}
-
-cases = glob.glob(f"grey/{center}_tiles/*")
-
-cn_path = f"{center}_tiles_CN"
-
-cases_select = cases[n*(INDEX-1):n*INDEX]
-
-#mempool = cp.get_default_memory_pool()
-#pinned_mempool = cp.get_default_pinned_memory_pool() CP_template_new/*/*.tiff
-#templates = tif.imread(glob.glob("grey/CN_template/*.tiff")[8])
-template_40 = tif.imread(glob.glob("grey/CP_template_new/40X/*.tiff")[0])
-template_20 = tif.imread(glob.glob("grey/CP_template_new/20X/*.tiff")[0])
-normalizer_20 = staintools.StainNormalizer(method="macenko")
-normalizer_40 = staintools.StainNormalizer(method="macenko")
-normalizer_20.fit(staintools.LuminosityStandardizer.standardize(template_20))
-normalizer_40.fit(staintools.LuminosityStandardizer.standardize(template_40))
-unnorm_tiles = []
-print(len(cases_select))
-for case in tqdm(cases_select):
-    tiles = list(Path(case).rglob("*.tiff"))
-    print(len(tiles))
-    try:
-        for tile in tiles:
-            try:
-                tile_name = str(tile).replace(f"{center}_tiles",cn_path)
-                if not Path(tile_name).exists():
-                    if not Path(tile_name).parent.exists():
-                        Path(tile_name).parent.mkdir(parents=True)
-                    tile_img = tif.imread(str(tile))
-                    #if tile_img.shape[0] != 512 or tile_img.shape[1] != 512:
-                        #tile_img = Image.fromarray(np.uint8(tile_img)).resize((512,512),Image.ANTIALIAS)
-                        #tile_img = np.asarray(tile_img)
-                    #tile_name = str(tile).replace
-                   # tile_img = tif.imread(str(tile))
-                    #print(tile_img)
-
-                    #tile_img = tile_img.reshape(1,512,512,3)
-                    #imgs = cp.asarray(tile_img,dtype=cp.float64)
-                    #norm_imgs= cp.asnumpy(normalizer.normalize(I=imgs))
-                   # norm_imgs = norm_imgs.reshape(512,512,3)
-                    tile_img = staintools.LuminosityStandardizer.standardize(tile_img)
-                    if "20X" in str(tile):
-                        norm_img = normalizer_20.transform(tile_img)
-                    else:
-                        norm_img = normalizer_40.transform(tile_img)
-                    tif.imsave(tile_name,norm_img)
-                   # Image.fromarray(np.uint8(norm_imgs)).save(tile_name)
-            except Exception as e:
-                    print(e)
-                    print(tile)
-                    unnorm_tiles.append(tile)
-            #norm_imgs = None
-            #imgs = None
-            #mempool.free_all_blocks() 
-            #pinned_mempool.free_all_blocks()
-            gc.collect() 
-     
-    except Exception as e:
-        print(e)
-        print(case) 
-        continue
-np.save(f"grey/unnorm_tiles_{center}_{n}_{INDEX}.npy",np.asarray(unnorm_tiles))

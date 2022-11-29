@@ -5,8 +5,8 @@
 import pandas as pd 
 import numpy as np
 #import matplotlib.pyplot as plt
-import tensorflow as tf
-from tensorflow import keras
+# import tensorflow as tf
+# from tensorflow import keras
 import os
 from pathlib import Path
 
@@ -18,30 +18,29 @@ import glob
 import random
 import sys
 import getopt
-from sklearn.model_selection import train_test_split,ShuffleSplit,StratifiedShuffleSplit
+# from sklearn.model_selection import train_test_split,ShuffleSplit,StratifiedShuffleSplit
 
 import cupy as cp
 import tifffile as tif
 import cv2
 import gc
 from tqdm import tqdm
+import staintools
 
-#!/usr/bin/env python
-# coding: utf-8
-os.chdir("/GPUFS/sysu_jhluo_1/")
-argv = sys.argv[1:]
-opts,args = getopt.getopt(argv,'c:l:i:n:')
-for opt,arg in opts:
-    if opt in ['-c']:
-        center = arg # ["SYSUCC","SYSUFAH"]
-    elif opt in ['-l']:
-        LEVEL= arg # [20X/40X]
-    elif opt in ["-i"]:
-        INDEX=int(arg) # for indexing
-    elif opt in ["-n"]:
-        n = int(arg)
-os.environ["CUDA_VISIBLE_DEVICES"] = f"{INDEX-1}"
+def pixel_255(image):
+    assert type(image) is np.ndarray
+    image[image==0] = 255
+    return image
 
+def gen_normal_size(I_list,target_shape=(512,512,3)):
+    for i in I_list:
+        try:
+            tiff = tif.imread(i)
+            if tiff.shape == target_shape:
+                yield i
+        except Exception as e:
+            print(e)
+            pass
 
 class HENormalizer:
     def fit(self, target):
@@ -160,45 +159,70 @@ class Normalizer(HENormalizer):
 
 
         return Inorm
+    
+
+#!/usr/bin/env python
+# coding: utf-8
+# os.chdir("/GPUFS/sysu_jhluo_1/")
+argv = sys.argv[1:]
+opts,args = getopt.getopt(argv,'c:l:i:n:')
+for opt,arg in opts:
+    if opt in ['-c']:
+        center = arg # ["SYSUCC","SYSUFAH"]
+    elif opt in ['-l']:
+        LEVEL= arg # [20X/40X]
+    elif opt in ["-i"]:
+        INDEX=int(arg) # for indexing
+    elif opt in ["-n"]:
+        n = int(arg)
+os.environ["CUDA_VISIBLE_DEVICES"] = f"{INDEX-1}"
 
 
 
-        
+# classes_to_index = {'nonprogress':0,'progress':1}
 
+cases = glob.glob(f"/mnt/wangyh/TCGA_patches/*/*/") 
+'''
+将cases转化为Path对象后使用parent.name获取label并创建文件路径
+'''
 
-classes_to_index = {'nonprogress':0,'progress':1}
-
-cases = glob.glob(f"grey/{center}_tiles/*")
-
-cn_path = f"{center}_tiles_CN"
+cn_path = '/mnt/wangyh/CN_patches/'
 
 cases_select = cases[n*(INDEX-1):n*INDEX]
 
 mempool = cp.get_default_memory_pool()
 pinned_mempool = cp.get_default_pinned_memory_pool()
-templates = tif.imread(glob.glob("grey/CN_template/*.tiff")[:10])
+
+
+template_paths = [i for i in gen_normal_size(glob.glob('/mnt/wangyh/TCGA_patches/H/d2e43ec6-5027-4f2c-932b-28a681da7cd9/5X/*.tiff'))]
+# templates = tif.imread(glob.glob("grey/CN_template/*.tiff")[:10])
+
+template = pixel_255(tif.imread(template_paths[63]))
 normalizer = Normalizer()
-normalizer.fit(templates)
+normalizer.fit(template)
+
+
 unnorm_tiles = []
+
 print(len(cases_select))
 for case in tqdm(cases_select):
-    tiles = list(Path(case).rglob("*.tiff"))
+    tiles = list(Path(case).rglob("*/*"))
     print(len(tiles))
     try:
         for tile in tiles:
             try:
-                tile_name = str(tile).replace(f"{center}_tiles",cn_path)
+                tile_name = str(tile).replace('/mnt/wangyh/TCGA_patches/',cn_path)  #transformed tile的存放路径
                 if not Path(tile_name).exists():
                     if not Path(tile_name).parent.exists():
                         Path(tile_name).parent.mkdir(parents=True)
-                    tile_img = tif.imread(str(tile))
+                        
+                    tile_img = tif.imread(str(tile))  #读取target_tile
                     #if tile_img.shape[0] != 512 or tile_img.shape[1] != 512:
                         #tile_img = Image.fromarray(np.uint8(tile_img)).resize((512,512),Image.ANTIALIAS)
                         #tile_img = np.asarray(tile_img)
                     #tile_name = str(tile).replace
                    # tile_img = tif.imread(str(tile))
                     #print(tile_img)
-
                     tile_img = tile_img.reshape(1,512,512,3)
                     imgs = cp.asarray(tile_img,dtype=cp.float64)
                     norm_imgs= cp.asnumpy(normalizer.normalize(I=imgs))
@@ -219,4 +243,5 @@ for case in tqdm(cases_select):
         print(e)
         print(case) 
         continue
-np.save(f"grey/unnorm_tiles_{center}_{n}_{INDEX}.npy",np.asarray(unnorm_tiles))
+np.save(f"{cn_path}.npy",np.asarray(unnorm_tiles))
+
