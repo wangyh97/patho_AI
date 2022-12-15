@@ -414,7 +414,7 @@ for i,svs in enumerate(svs_paths):  #svs是一个svs图像路径的str
     label = df.loc[df['svs_paths']==svs]['TMB_H/L'].to_list()[0] ## 在这里用svs_path来取label的值
     xml_path = Path(svs).with_suffix('.xml')   #返回一个path
     #构造存放patch的目录，目录的结构为
-    case_name = uuid[i]
+    case_name = df.loc[df['svs_paths']==svs]['dir_uuid'].to_list()[0]
 #     case_name = Path(svs).parent.name
     tile_path = Path(patch_path)/label/case_name
     

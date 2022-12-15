@@ -163,17 +163,19 @@ class Normalizer(HENormalizer):
         
 
 
-classes_to_index = {'nonprogress':0,'progress':1}
+# classes_to_index = {'nonprogress':0,'progress':1}
 
-cases = glob.glob(f"grey/{center}_tiles/*")
+cases = glob.glob(f"/mnt/wangyh/TCGA_patches/*/*/") 
 
-cn_path = f"{center}_tiles_CN"
+cn_path = '/mnt/wangyh/CN_patches/'
 
 cases_select = cases[n*(INDEX-1):n*INDEX]
 
 #mempool = cp.get_default_memory_pool()
 #pinned_mempool = cp.get_default_pinned_memory_pool() CP_template_new/*/*.tiff
 #templates = tif.imread(glob.glob("grey/CN_template/*.tiff")[8])
+template_40 = 
+
 template_40 = tif.imread(glob.glob("grey/CP_template_new/40X/*.tiff")[0])
 template_20 = tif.imread(glob.glob("grey/CP_template_new/20X/*.tiff")[0])
 normalizer_20 = staintools.StainNormalizer(method="macenko")

@@ -182,6 +182,7 @@ os.environ["CUDA_VISIBLE_DEVICES"] = f"{INDEX-1}"
 # classes_to_index = {'nonprogress':0,'progress':1}
 
 cases = glob.glob(f"/mnt/wangyh/TCGA_patches/*/*/") 
+
 '''
 将cases转化为Path对象后使用parent.name获取label并创建文件路径
 '''
@@ -194,12 +195,11 @@ mempool = cp.get_default_memory_pool()
 pinned_mempool = cp.get_default_pinned_memory_pool()
 
 
-template_paths = [i for i in gen_normal_size(glob.glob('/mnt/wangyh/TCGA_patches/H/d2e43ec6-5027-4f2c-932b-28a681da7cd9/5X/*.tiff'))]
-# templates = tif.imread(glob.glob("grey/CN_template/*.tiff")[:10])
+template_paths = [i for i in gen_normal_size(glob.glob('/mnt/wangyh/TCGA_patches/H/c7bcb827-9da0-4b07-8065-3ce01befec13/40X/*.tiff'))]
+template_file = pixel_255(tif.TiffSequence(template_paths[:100]).asarray(),point=True)
 
-template = pixel_255(tif.imread(template_paths[63]))
 normalizer = Normalizer()
-normalizer.fit(template)
+normalizer.fit(template_file[11])
 
 
 unnorm_tiles = []
@@ -217,9 +217,9 @@ for case in tqdm(cases_select):
                         Path(tile_name).parent.mkdir(parents=True)
                         
                     tile_img = tif.imread(str(tile))  #读取target_tile
-                    #if tile_img.shape[0] != 512 or tile_img.shape[1] != 512:
-                        #tile_img = Image.fromarray(np.uint8(tile_img)).resize((512,512),Image.ANTIALIAS)
-                        #tile_img = np.asarray(tile_img)
+                    if tile_img.shape[0] != 512 or tile_img.shape[1] != 512:
+                        tile_img = Image.fromarray(np.uint8(tile_img)).resize((512,512),Image.ANTIALIAS)
+                        tile_img = np.asarray(tile_img)
                     #tile_name = str(tile).replace
                    # tile_img = tif.imread(str(tile))
                     #print(tile_img)
