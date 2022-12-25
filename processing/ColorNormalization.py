@@ -107,7 +107,7 @@ class Normalizer(HENormalizer):
         I = I.reshape((-1,3))
 
         OD, ODhat = self.__convert_rgb2od(I, Io=Io, beta=beta)
-
+        assert len(ODhat)!=0,'all pixels are transparent'
         # compute eigenvectors
         _, eigvecs = cp.linalg.eigh(cp.cov(ODhat.T))
 
@@ -196,7 +196,7 @@ pinned_mempool = cp.get_default_pinned_memory_pool()
 
 
 template_paths = [i for i in gen_normal_size(glob.glob('/mnt/wangyh/TCGA_patches/H/c7bcb827-9da0-4b07-8065-3ce01befec13/40X/*.tiff'))]
-template_file = pixel_255(tif.TiffSequence(template_paths[:100]).asarray(),point=True)
+template_file = pixel_255(tif.TiffSequence(template_paths[:100]).asarray())
 
 normalizer = Normalizer()
 normalizer.fit(template_file[11])
@@ -217,6 +217,7 @@ for case in tqdm(cases_select):
                         Path(tile_name).parent.mkdir(parents=True)
                         
                     tile_img = tif.imread(str(tile))  #读取target_tile
+                    tile_img = pixel_255(tile_img)
                     if tile_img.shape[0] != 512 or tile_img.shape[1] != 512:
                         tile_img = Image.fromarray(np.uint8(tile_img)).resize((512,512),Image.ANTIALIAS)
                         tile_img = np.asarray(tile_img)
@@ -243,5 +244,5 @@ for case in tqdm(cases_select):
         print(e)
         print(case) 
         continue
-np.save(f"{cn_path}.npy",np.asarray(unnorm_tiles))
+np.save(f"{cn_path}unnormed_{INDEX}.npy",np.asarray(unnorm_tiles))
 
