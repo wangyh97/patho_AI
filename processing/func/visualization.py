@@ -1,8 +1,11 @@
 '''
 functions for visualization
 '''
-
+openslide_path = {'desktop':'D:/edge下载/openslide-win64-20220811/bin',
+                'laptop':'E:/openslide-win64-20171122/bin'}
 import numpy as np
+import os
+from pathlib import Path
 if hasattr(os,'add_dll_directory'):
     for i in openslide_path.values():
         if Path(i).exists():
@@ -72,11 +75,13 @@ def tiff_checker(tiff_path):
 
 #同时展示多张图片
 def ploting(rows,cols,figseq,
-            figsize=(20,20),fontdict={'size':20},title = []):
+            figsize=(20,20),fontdict={'size':20},title = [],cmap = False):
     #figseq是一个4维的ndarray
     #rows,cols是展示图片的行/列数
     fig,axes = plt.subplots(rows,cols,figsize=figsize)
     fontdict = fontdict
+    if cmap:
+        plt.rcParams['image.cmap'] = cmap
     if rows != 1:
         for i in range(rows):
             for j in range(cols):
