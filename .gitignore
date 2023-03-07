@@ -7,3 +7,9 @@
 /CN_test/
 
 /processing/*.out
+
+/processing/resnext/output
+
+config/data_segmentation_csv/*
+
+processing/result_rm.npy
