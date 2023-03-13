@@ -1,0 +1,1178 @@
+processing  1/39:------/mnt/wangyh/TCGA_svs/14f57c47-716f-4174-af0e-0830a2d9b2e3/TCGA-K4-A5RJ-01Z-00-DX1.DFDDA8B5-E80F-4BF9-87E3-EA75E294ABF5.svs
+extract_patches.py:86: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  x = np.float(coord.attrib["X"])
+extract_patches.py:87: DeprecationWarning: `np.float` is a deprecated alias for the builtin `float`. To silence this warning, use `float` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.float64` here.
+Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+  y = np.float(coord.attrib["Y"])
+extract_patches.py:120: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  contours = np.array(mask_coords[cls])
+masks groups includes :['tumor', 'necrosis', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/d2e43ec6-5027-4f2c-932b-28a681da7cd9
+Done!
+All levels processed!!
+Time consumed : 43.00845762093862 min
+******0/39 remain unextract******
+processing  2/39:------/mnt/wangyh/TCGA_svs/162ff29b-1bc2-443b-8443-a02cc01ee457/TCGA-K4-A6FZ-01Z-00-DX1.E4BB7534-1719-45C7-8E0F-78558DB9AD37.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/bff29d20-3a8f-4a5d-a2de-0e142390551d
+Done!
+All levels processed!!
+Time consumed : 50.426724370320635 min
+******0/39 remain unextract******
+processing  3/39:------/mnt/wangyh/TCGA_svs/c15c23f2-aa30-45ce-bc83-0e3158779250/TCGA-K4-A6MB-01Z-00-DX1.4A6009D3-05D9-4E8B-8EB2-4A52B5B6FED8.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/edcf4ae6-c985-40ad-aff4-a0ce31b46aeb
+Done!
+All levels processed!!
+Time consumed : 17.740551694234213 min
+******0/39 remain unextract******
+processing  4/39:------/mnt/wangyh/TCGA_svs/95beb95d-34d7-4903-83e8-242ded21cc20/TCGA-K4-A83P-01Z-00-DX1.6B9251BD-650E-4F69-BE8F-AB0BE5DC90FB.svs
+masks groups includes :['necrosis', 'tumor', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e20c2176-2b57-4cc9-a68a-eb6933bf60b1
+Done!
+All levels processed!!
+Time consumed : 53.37655049562454 min
+******0/39 remain unextract******
+processing  5/39:------/mnt/wangyh/TCGA_svs/b9b4b3ba-e0b2-43a0-acf6-e78c651cf25a/TCGA-K4-AAQO-01Z-00-DX1.7533831F-414B-4BA5-9CDA-D8B24E579962.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a085fe18-1709-417a-a779-fe69f5964766
+Done!
+All levels processed!!
+Time consumed : 48.828799510002135 min
+******0/39 remain unextract******
+processing  6/39:------/mnt/wangyh/TCGA_svs/723e33e6-d719-4af8-a483-272895466a86/TCGA-LC-A66R-01Z-00-DX1.9D753031-E31A-4E0E-B937-E0D3C47CFFB9.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/70e383bf-91cb-4a65-b12a-950f365c4d62
+Done!
+All levels processed!!
+Time consumed : 27.7986443400383 min
+******0/39 remain unextract******
+processing  7/39:------/mnt/wangyh/TCGA_svs/e50ed4d7-cd6a-48bb-b21a-80e8d5448aea/TCGA-LT-A5Z6-01Z-00-DX1.F547947F-DDB8-4DFF-B08E-FB494F7F044B.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/790d96d7-1191-4cf7-9c78-3e879723afd8
+Done!
+All levels processed!!
+Time consumed : 82.6369139790535 min
+******0/39 remain unextract******
+processing  8/39:------/mnt/wangyh/TCGA_svs/724d0c82-be90-408c-9bc5-75e74137307d/TCGA-LT-A8JT-01Z-00-DX1.8D04BB53-EEA9-401B-B92E-8EB9DEEE7E4E.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/741d4359-8615-4783-98ab-0f04bb10c52c
+Done!
+All levels processed!!
+Time consumed : 81.51672178109487 min
+******0/39 remain unextract******
+processing  9/39:------/mnt/wangyh/TCGA_svs/55e57542-5604-465f-8071-14e34ff1a2fa/TCGA-MV-A51V-01Z-00-DX1.5D626704-0803-4912-96D5-FB1EEFA509FB.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/cf1884cf-8262-45b4-841a-e1ef212c0a3a
+Done!
+All levels processed!!
+Time consumed : 3.473130456606547 min
+******0/39 remain unextract******
+processing  10/39:------/mnt/wangyh/TCGA_svs/a5328381-231d-437e-9bf7-35d59f86f979/TCGA-PQ-A6FI-01Z-00-DX1.EC3791D8-B5D2-468A-9FB7-D0217CD02DFB.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a29135be-c1a9-4402-b7a5-47cc8172a5ad
+Done!
+All levels processed!!
+Time consumed : 59.73496864636739 min
+******0/39 remain unextract******
+processing  11/39:------/mnt/wangyh/TCGA_svs/2fce1392-6652-45e7-b1fa-4f049ef2b83a/TCGA-PQ-A6FN-01Z-00-DX1.58FC60E8-7386-4E57-804D-6AD103AE0FDC.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/0f5b4de3-f7ed-4439-bf2d-621d0af6a2a3
+Done!
+All levels processed!!
+Time consumed : 31.246037753423057 min
+******0/39 remain unextract******
+processing  12/39:------/mnt/wangyh/TCGA_svs/c791b9dd-9945-44b8-b21f-04d87e14c488/TCGA-S5-A6DX-01Z-00-DX1.70418D45-0396-4838-BF0C-588C7719A131.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/fe9ee61c-f3cb-4d98-8bd4-dde12859a181
+Done!
+All levels processed!!
+Time consumed : 68.76304677724838 min
+******0/39 remain unextract******
+processing  13/39:------/mnt/wangyh/TCGA_svs/8805e6a4-3c48-4f9d-ad45-442891b79908/TCGA-SY-A9G0-01Z-00-DX1.6F019857-03C8-4B2B-8892-32CBF3EB303F.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/636589bf-d553-44b0-bebc-d75c308fb351
+Done!
+All levels processed!!
+Time consumed : 10.327805010477702 min
+******0/39 remain unextract******
+processing  14/39:------/mnt/wangyh/TCGA_svs/bb3c07ec-7494-4cb5-a549-8d87ad741ba4/TCGA-SY-A9G5-01Z-00-DX1.CE221A12-59FC-4482-9BD5-7082A2EA4E61.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/1fa739c1-75f2-433b-91c7-f743bdf0fce0
+Done!
+All levels processed!!
+Time consumed : 106.19537483851114 min
+******0/39 remain unextract******
+processing  15/39:------/mnt/wangyh/TCGA_svs/c65fef42-cc15-445f-9a45-f30c7c67736e/TCGA-UY-A78K-01Z-00-DX1.329D9BFF-A204-4A7D-8767-B39F34179708.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/d1becbe5-78d6-46f1-952f-f66796856883
+Done!
+All levels processed!!
+Time consumed : 34.42365082105001 min
+******0/39 remain unextract******
+processing  16/39:------/mnt/wangyh/TCGA_svs/4ced8d7d-694b-4504-ac4f-356de7b7847e/TCGA-UY-A78L-01Z-00-DX1.8955EB83-E4AE-452E-8B68-83C4B8BED6D5.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/57e5981d-94c6-4a4c-bb93-b3fff877b495
+Done!
+All levels processed!!
+Time consumed : 120.68630914290746 min
+******0/39 remain unextract******
+processing  17/39:------/mnt/wangyh/TCGA_svs/37293652-bf22-4656-a1e7-6e6f0d49029a/TCGA-UY-A78M-01Z-00-DX1.9C08E77F-E63B-480E-A4D5-1576EF802152.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a6679cb9-b463-49b3-a5b5-7e46a79d4b85
+Done!
+All levels processed!!
+Time consumed : 80.01372629801432 min
+******0/39 remain unextract******
+processing  18/39:------/mnt/wangyh/TCGA_svs/f3f90a2f-cf68-4835-9233-f8fe5d528858/TCGA-UY-A78N-01Z-00-DX1.31873403-A629-4ED9-B2AF-14817689BB3B.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/49839b8d-742a-41da-81fe-bb0f610b6316
+Done!
+All levels processed!!
+Time consumed : 206.89605348904928 min
+******0/39 remain unextract******
+processing  19/39:------/mnt/wangyh/TCGA_svs/69f43c53-48f7-4d37-a5fa-b28a4a4ff423/TCGA-UY-A78O-01Z-00-DX1.6DDC084F-A086-4B5B-90B6-9C45E842A5FA.svs
+masks groups includes :['tumor', 'necrosis', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/66119642-bd0f-4108-b80a-08a14de5a7d4
+Done!
+All levels processed!!
+Time consumed : 153.31445190906524 min
+******0/39 remain unextract******
+processing  20/39:------/mnt/wangyh/TCGA_svs/d0f193e7-b75c-482a-adbd-d5aa25c212cb/TCGA-UY-A78P-01Z-00-DX1.B6783816-0322-4453-BC80-20ED79A40588.svs
+masks groups includes :['tumor', 'necrosis', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/702ab1dd-5bf0-4cc9-b6ff-147d093d8d1c
+Done!
+All levels processed!!
+Time consumed : 110.06634906133016 min
+******0/39 remain unextract******
+processing  21/39:------/mnt/wangyh/TCGA_svs/1a8fc0a8-cd84-4d01-86aa-bf75c1b7fc9e/TCGA-UY-A8OB-01Z-00-DX1.9DD447FB-44F0-4FFF-8293-9FF0D54A96A0.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/e73a1081-4a74-483e-84ab-9b4a614a86fb
+Done!
+All levels processed!!
+Time consumed : 129.89854476451873 min
+******0/39 remain unextract******
+processing  22/39:------/mnt/wangyh/TCGA_svs/04dee816-ff34-4043-ad95-491f9e4a6ed3/TCGA-UY-A8OC-01Z-00-DX1.EE2DF9C6-3CA9-411D-85D4-D1831F14AAFD.svs
+masks groups includes :['tumor', 'necrosis', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2d3b8809-ce5d-4843-ab97-4f5d40b8ec12
+Done!
+All levels processed!!
+Time consumed : 74.75827007293701 min
+******0/39 remain unextract******
+processing  23/39:------/mnt/wangyh/TCGA_svs/4b860476-9bac-40c6-b6ea-8c1aaec737e1/TCGA-UY-A8OD-01Z-00-DX1.3985C497-D586-4AB9-A635-63A7946C5A2E.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8261c7c7-972b-4ad6-bdda-0762ee5c4907
+Done!
+All levels processed!!
+Time consumed : 98.47204957008361 min
+******0/39 remain unextract******
+processing  24/39:------/mnt/wangyh/TCGA_svs/b78959f2-43fb-419c-83d2-b7ea35c3606a/TCGA-UY-A9PA-01Z-00-DX1.A83A79FB-810C-42A4-8EC7-A3328D79542D.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/80797b10-10fc-4b97-8eae-71de50f315e9
+Done!
+All levels processed!!
+Time consumed : 100.292076532046 min
+******0/39 remain unextract******
+processing  25/39:------/mnt/wangyh/TCGA_svs/087cf5e8-d649-4b50-993e-36a52ea4a648/TCGA-UY-A9PB-01Z-00-DX1.4ACBFEEA-703A-47AF-A67D-359B9F027DD0.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/a70f2fd4-7516-4c3f-9683-5eb88bf794f7
+Done!
+All levels processed!!
+Time consumed : 260.36443375349046 min
+******0/39 remain unextract******
+processing  26/39:------/mnt/wangyh/TCGA_svs/2045b568-d48f-45b6-93bd-7edfa193e0a5/TCGA-UY-A9PD-01Z-00-DX1.55AF21E3-74DF-4D18-ADA4-A2A12665DF0A.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/dcb80bf2-320b-4f9f-8905-9272dbf8a889
+Done!
+All levels processed!!
+Time consumed : 28.816719730695088 min
+******0/39 remain unextract******
+processing  27/39:------/mnt/wangyh/TCGA_svs/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/TCGA-UY-A9PE-01Z-00-DX1.19205347-9969-475E-9293-E99D4833E462.svs
+masks groups includes :['tumor', 'stroma', 'artificial', 'necrosis']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/383812ea-a509-45a8-959d-782c45bac5b8
+Done!
+All levels processed!!
+Time consumed : 25.2024627049764 min
+******0/39 remain unextract******
+processing  28/39:------/mnt/wangyh/TCGA_svs/886d71e2-e5c3-42d5-8a75-646814b3624e/TCGA-UY-A9PF-01Z-00-DX1.8A5B3826-48D2-42AE-A4DE-C0BB90134FCB.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/4f4fb3ea-56bb-4dcf-bd16-72833b9a18c8
+Done!
+All levels processed!!
+Time consumed : 282.05473108291625 min
+******0/39 remain unextract******
+processing  29/39:------/mnt/wangyh/TCGA_svs/958120bc-7e12-464a-81fb-ef8caf2b823f/TCGA-UY-A9PH-01Z-00-DX1.7FAA1EC7-C2BB-47E0-BCEB-5D4095078B2E.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/638e30db-305d-45e1-a8ec-05d125f72c0b
+Done!
+All levels processed!!
+Time consumed : 44.36913294394811 min
+******0/39 remain unextract******
+processing  30/39:------/mnt/wangyh/TCGA_svs/8cf7efe0-f20f-4937-b8c3-44a78c3e2174/TCGA-XF-A8HB-01Z-00-DX1.D6874152-D20A-4CA4-8E8B-8CBAB5F7D7B5.svs
+masks groups includes :['tumor', 'necrosis', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/a8e44f7c-85a0-43af-882c-16b148c6dc1e
+Done!
+All levels processed!!
+Time consumed : 27.44550165335337 min
+******0/39 remain unextract******
+processing  31/39:------/mnt/wangyh/TCGA_svs/d8761514-b9c9-469f-ad17-b425d3bef7d9/TCGA-XF-A8HC-01Z-00-DX1.BF199254-2954-4836-B037-E10493275D8C.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f7006cc5-8462-4c5b-ba2d-7a5593547c8d
+Done!
+All levels processed!!
+Time consumed : 68.00528734525045 min
+******0/39 remain unextract******
+processing  32/39:------/mnt/wangyh/TCGA_svs/6f0e003d-dd3e-4c4c-87ea-f435255c3061/TCGA-XF-A8HD-01Z-00-DX1.809538C0-0D52-4DA5-AA7D-EDA7B363BF36.svs
+masks groups includes :['tumor', 'stroma', 'artificial', 'necrosis']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/e133ed95-c177-41ab-a71f-ad5460ea52b8
+Done!
+All levels processed!!
+Time consumed : 138.50224959055583 min
+******0/39 remain unextract******
+processing  33/39:------/mnt/wangyh/TCGA_svs/53508c51-241c-4941-8fab-2aae2c54ed03/TCGA-XF-A8HE-01Z-00-DX1.A0E05485-2A24-4BD0-8B2F-E0D9641ADD9F.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/H/bb1acd98-e82a-42be-93d0-99bfb95d1c8d
+Done!
+All levels processed!!
+Time consumed : 223.15089100201925 min
+******0/39 remain unextract******
+processing  34/39:------/mnt/wangyh/TCGA_svs/ee44f40e-69a1-41f3-83a2-b4307c3e1d5a/TCGA-XF-A8HF-01Z-00-DX1.119AB9B9-73CE-4DE3-B305-4872F704E3E4.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/76715a6d-d1e1-4780-9d52-a79625b00217
+Done!
+All levels processed!!
+Time consumed : 84.37393745581309 min
+******0/39 remain unextract******
+processing  35/39:------/mnt/wangyh/TCGA_svs/f07e99e8-1876-48b5-b1fa-1543ea874da3/TCGA-XF-A8HG-01Z-00-DX1.9D3970D1-C598-4F4C-ABBD-92C55C7C837A.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/2ad01582-9313-4252-9cc8-1fcd0195e11f
+Done!
+All levels processed!!
+Time consumed : 82.78353695472082 min
+******0/39 remain unextract******
+processing  36/39:------/mnt/wangyh/TCGA_svs/77652963-a12c-426b-ba76-1eed040a8c10/TCGA-XF-A8HH-01Z-00-DX1.22E9DD6D-F231-422F-A349-9FF60B65D50E.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/8021356d-5af7-4084-bcaf-a82a47b0dc61
+Done!
+All levels processed!!
+Time consumed : 66.24639838536581 min
+******0/39 remain unextract******
+processing  37/39:------/mnt/wangyh/TCGA_svs/c4771490-1667-42cf-8d2f-706df5b4f34a/TCGA-XF-A8HI-01Z-00-DX1.1BA3EF33-D4D5-4213-833D-A7F8C0EFFF02.svs
+masks groups includes :['tumor', 'necrosis', 'artificial', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/aec6ae3a-375a-430a-9411-cd1129d5eca6
+Done!
+All levels processed!!
+Time consumed : 66.63252802292506 min
+******0/39 remain unextract******
+processing  38/39:------/mnt/wangyh/TCGA_svs/dddf8b78-1e6d-4d0d-b72d-a9b518181a00/TCGA-XF-A9SH-01Z-00-DX1.B1E33049-ABB8-4F2F-9D2D-503E48B8CDE5.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/962d3290-06dc-4368-a432-5ae171304722
+Done!
+All levels processed!!
+Time consumed : 17.823474903901417 min
+******0/39 remain unextract******
+processing  39/39:------/mnt/wangyh/TCGA_svs/b18ffb29-2ac7-4d4e-a470-cbbb726d59ee/TCGA-XF-A9SI-01Z-00-DX1.537F0394-40FE-4CB7-8524-7BC34F624C15.svs
+masks groups includes :['tumor', 'artificial', 'necrosis', 'stroma']
+processing ---level 5X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+processing ---level 10X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+processing ---level 20X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+processing ---level 40X,tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+All levels processed!!
+processing ---level 5X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+processing ---level 10X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+processing ---level 20X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+processing ---level 40X,non-tumor tiles
+/mnt/wangyh/TCGA_patches/L/f4ca3ddd-dc53-4ab0-b55b-942603b64e57
+Done!
+All levels processed!!
+Time consumed : 66.50216688315074 min
+******0/39 remain unextract******
