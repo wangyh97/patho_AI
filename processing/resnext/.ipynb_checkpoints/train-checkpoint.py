@@ -9,7 +9,7 @@ import time
 import os
 from resnext import *
 import argparse
-from load_data import myData
+from load_data_resegmented_unbalanced import myData
 import numpy as np
 import gc
 

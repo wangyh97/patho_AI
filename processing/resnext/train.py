@@ -9,7 +9,7 @@ import time
 import os
 from resnext import *
 import argparse
-from load_data import myData
+from load_data_resegmented_unbalanced import myData
 import numpy as np
 import gc
 
@@ -126,10 +126,14 @@ if __name__ == '__main__':
     parser.add_argument('--resume', type=str, default="", help="For training from one checkpoint")
     parser.add_argument('--start-epoch', type=int, default=0, help="Corresponding to the epoch of resume ")
     parser.add_argument('--scale',type=int,help='scale of selected dataset, 5/10/20/40')
+    parser.add_argument('--loader',type = str,help = 'method solving imbalanced classification, choose from: unbanlanced/imb/mean/median')
     args = parser.parse_args()
 
     # read data
-    dataloders, dataset_sizes = myData(args)
+    if args.loader == 'unbalanced':
+        dataloders, dataset_sizes = myData(args)
+    elif args.loader == 'imb':
+        dataloaders,dataset_size = imbDataloader(args)
 
     # use gpu or not
     use_gpu = torch.cuda.is_available()
