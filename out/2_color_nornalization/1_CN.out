@@ -1,0 +1,1678 @@
+2022-12-24 16:34:24.844243: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+97
+  0%|                                                                                                                                                                                                                                                                                                                                        | 0/97 [00:00<?, ?it/s]10578
+  1%|███▏                                                                                                                                                                                                                                                                                                                       | 1/97 [27:39<44:15:15, 1659.54s/it]10666
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_222_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_207_29.tiff
+ColorNormalization.py:112: RuntimeWarning: Degrees of freedom <= 0 for slice
+  _, eigvecs = cp.linalg.eigh(cp.cov(ODhat.T))
+/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/cupy/_statistics/correlation.py:141: RuntimeWarning: divide by zero encountered in double_scalars
+  out = X.dot(X.T.conj()) * (1 / cupy.float64(fact))
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_221_70.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_223_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_223_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_225_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_223_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_224_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_225_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_223_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_224_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_208_28.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_225_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_225_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_220_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_207_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_207_26.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_224_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_209_30.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_206_26.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_208_29.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_224_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/1f24af21-9bb4-409f-8bbc-5a0e56d777ab/40X/nonT_206_25.tiff
+  2%|██████▍                                                                                                                                                                                                                                                                                                                    | 2/97 [55:51<44:17:24, 1678.36s/it]15787
+  3%|█████████▋                                                                                                                                                                                                                                                                                                               | 3/97 [1:39:17<54:53:15, 2102.08s/it]11502
+  4%|████████████▉                                                                                                                                                                                                                                                                                                            | 4/97 [2:10:31<51:58:43, 2012.08s/it]20950
+  5%|████████████████▏                                                                                                                                                                                                                                                                                                        | 5/97 [3:08:11<64:45:50, 2534.25s/it]11922
+  6%|███████████████████▎                                                                                                                                                                                                                                                                                                     | 6/97 [3:41:54<59:40:02, 2360.46s/it]11270
+  7%|██████████████████████▌                                                                                                                                                                                                                                                                                                  | 7/97 [4:12:19<54:38:01, 2185.35s/it]8676
+  8%|█████████████████████████▊                                                                                                                                                                                                                                                                                               | 8/97 [4:34:53<47:28:46, 1920.53s/it]15632
+  9%|█████████████████████████████                                                                                                                                                                                                                                                                                            | 9/97 [5:18:17<52:10:18, 2134.30s/it]8245
+ 10%|████████████████████████████████▏                                                                                                                                                                                                                                                                                       | 10/97 [5:40:55<45:47:16, 1894.67s/it]31736
+ 11%|███████████████████████████████████▍                                                                                                                                                                                                                                                                                    | 11/97 [7:12:16<71:28:52, 2992.23s/it]990
+ 12%|██████████████████████████████████████▌                                                                                                                                                                                                                                                                                 | 12/97 [7:14:54<50:17:28, 2129.98s/it]13819
+ 13%|█████████████████████████████████████████▊                                                                                                                                                                                                                                                                              | 13/97 [7:53:46<51:07:36, 2191.15s/it]6065
+ 14%|█████████████████████████████████████████████                                                                                                                                                                                                                                                                           | 14/97 [8:10:40<42:19:18, 1835.65s/it]23371
+ 15%|████████████████████████████████████████████████▏                                                                                                                                                                                                                                                                       | 15/97 [9:15:42<56:00:07, 2458.63s/it]2405
+ 16%|███████████████████████████████████████████████████▍                                                                                                                                                                                                                                                                    | 16/97 [9:21:53<41:10:49, 1830.25s/it]22612
+ 18%|██████████████████████████████████████████████████████▌                                                                                                                                                                                                                                                                | 17/97 [10:24:56<53:43:11, 2417.40s/it]5459
+ 19%|█████████████████████████████████████████████████████████▋                                                                                                                                                                                                                                                             | 18/97 [10:40:16<43:10:17, 1967.31s/it]9820
+ 20%|████████████████████████████████████████████████████████████▉                                                                                                                                                                                                                                                          | 19/97 [11:06:37<40:06:45, 1851.36s/it]10575
+ 21%|████████████████████████████████████████████████████████████████                                                                                                                                                                                                                                                       | 20/97 [11:35:25<38:48:28, 1814.40s/it]28024
+ 22%|███████████████████████████████████████████████████████████████████▎                                                                                                                                                                                                                                                   | 21/97 [12:56:41<57:42:25, 2733.50s/it]11823
+ 23%|██████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                                | 22/97 [13:29:23<52:07:15, 2501.81s/it]1788
+ 24%|█████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                                                                                             | 23/97 [13:34:13<37:46:52, 1838.01s/it]7420
+ 25%|████████████████████████████████████████████████████████████████████████████▉                                                                                                                                                                                                                                          | 24/97 [13:54:39<33:33:07, 1654.62s/it]17417
+ 26%|████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                                                      | 25/97 [14:43:32<40:45:46, 2038.14s/it]12429
+ 27%|███████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                                                                                   | 26/97 [15:17:46<40:17:22, 2042.85s/it]15010
+ 28%|██████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                | 27/97 [15:59:27<42:23:43, 2180.34s/it]9809
+ 29%|█████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                                                             | 28/97 [16:27:01<38:45:43, 2022.37s/it]21284
+ 30%|████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                                                                                                          | 29/97 [17:28:09<47:31:26, 2515.98s/it]19686
+ 31%|████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                                      | 30/97 [18:25:26<51:57:59, 2792.23s/it]17966
+ 32%|███████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                                                   | 31/97 [19:16:09<52:34:29, 2867.72s/it]22403
+ 33%|██████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                | 32/97 [20:19:12<56:44:05, 3142.24s/it]18858
+ 34%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                                             | 33/97 [21:11:52<55:57:12, 3147.38s/it]14641
+ 35%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                                                                                          | 34/97 [21:52:39<51:24:13, 2937.36s/it]0
+10749
+ 37%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                                   | 36/97 [22:22:55<33:54:06, 2000.76s/it]8543
+ 38%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                                                | 37/97 [22:45:37<30:42:16, 1842.28s/it]29444
+ 39%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                             | 38/97 [24:10:08<44:01:59, 2686.78s/it]24991
+ 40%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                                                                          | 39/97 [25:23:39<50:50:41, 3155.89s/it]12188
+ 41%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                      | 40/97 [25:57:59<45:06:47, 2849.25s/it]4803
+ 42%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                   | 41/97 [26:11:22<35:13:54, 2264.90s/it]15609
+ 43%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                                | 42/97 [26:54:53<36:08:03, 2365.15s/it]18459
+ 44%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                             | 43/97 [27:48:25<39:11:42, 2613.01s/it]12676
+ 45%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                                                          | 44/97 [28:23:33<36:16:36, 2464.09s/it]17389
+ 46%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                      | 45/97 [29:12:16<37:33:24, 2600.09s/it]17463
+ 47%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                   | 46/97 [30:00:45<38:08:06, 2691.89s/it]16268
+ 48%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                | 47/97 [30:45:04<37:15:10, 2682.20s/it]35812
+ 49%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                                             | 48/97 [32:29:17<51:01:39, 3748.98s/it]9909
+ 51%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                                          | 49/97 [32:56:16<41:29:35, 3112.00s/it]7504
+ 52%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                      | 50/97 [33:17:27<33:25:54, 2560.73s/it]6025
+ 53%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                   | 51/97 [33:33:43<26:39:12, 2085.93s/it]25001
+ 54%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                | 52/97 [34:46:18<34:34:25, 2765.90s/it]955
+ 55%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                             | 53/97 [34:48:55<24:14:48, 1983.82s/it]21476
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                         | 54/97 [35:51:40<30:04:29, 2517.91s/it]1039
+ 57%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                      | 55/97 [35:54:38<21:11:21, 1816.23s/it]14710
+ 58%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                   | 56/97 [36:36:04<22:58:22, 2017.14s/it]27431
+ 59%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                | 57/97 [37:57:07<31:53:49, 2870.74s/it]6412
+ 60%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                             | 58/97 [38:14:04<25:04:31, 2314.67s/it]9202
+ 61%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                         | 59/97 [38:40:35<22:08:24, 2097.50s/it]6297
+ 62%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                      | 60/97 [38:57:50<18:17:01, 1778.95s/it]11655
+ 63%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                   | 61/97 [39:30:54<18:24:14, 1840.41s/it]2541
+ 64%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                | 62/97 [39:37:42<13:42:55, 1410.73s/it]11042
+ 65%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                             | 63/97 [40:08:08<14:29:59, 1535.29s/it]23475
+ 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                         | 64/97 [41:15:54<21:01:56, 2294.43s/it]17065
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                      | 65/97 [42:05:32<22:13:00, 2499.38s/it]23382
+ 68%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                   | 66/97 [43:11:58<25:21:46, 2945.37s/it]22247
+ 69%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                | 67/97 [44:15:41<26:44:21, 3208.70s/it]6419
+ 70%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                             | 68/97 [44:32:50<20:34:47, 2554.73s/it]7361
+ 71%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                         | 69/97 [44:51:30<16:31:23, 2124.40s/it]2401
+ 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                      | 70/97 [44:57:41<11:59:15, 1598.33s/it]14594
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_160_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_39_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_72_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_153_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_204_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_151_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_212_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_213_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_142_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_218_70.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_97_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_84_29.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_212_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_41_74.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_52_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_208_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_67_12.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_197_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_37_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_133_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_218_72.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_22.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_75_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_207_82.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_65_12.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_6_23.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_85_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_200_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_205_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_9_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_194_45.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_73_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_128_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_35_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_197_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_206_80.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_86_31.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_90_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_82_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_208_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_9_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_79_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_204_83.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_53_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_78_24.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_142_56.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_11_23.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_216_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_214_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_208_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_215_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_25.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_67_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_212_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_168_34.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_84.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_153_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_109_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_6_24.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_65_13.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_54_94.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_103_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_173_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_56.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_166_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_159_45.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_202_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_14_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_11_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_216_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_49_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_71_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_103_41.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_79_22.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_79_21.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_207_58.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_91_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_6_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_216_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_66_13.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_195_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_218_75.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_48_84.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_165_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_24_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_191_41.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_60_96.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_156_50.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_52_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_88_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_14_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_71_16.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_92_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_219_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_193_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_42_78.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_130_40.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_213_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_141_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_11_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_179_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_78_22.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_209_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_210_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_207_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_78_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_76_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_140_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_9_34.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_9_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_178_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_94_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_134_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_17_13.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_204_82.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_181_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_206_83.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_177_35.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_157_47.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_153_54.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_207_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_72_16.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_110_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_131_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_216_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_116_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_11_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_78_21.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_176_35.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_83_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_78_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_94_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_82_23.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_210_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_156_51.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_192_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_136_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_67_13.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_31.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_218_73.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_216_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_8_24.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_219_76.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_208_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_199_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_12_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_75_103.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_195_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_24.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_9_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_72_14.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_200_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_147_54.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_93_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_126_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_109_41.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_177_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_192_42.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_77_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_139_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_92_103.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_12_35.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_130_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_91_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_8_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_71_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_213_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_138_50.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_171_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_211_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_180_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_130_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_14_16.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_192_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_49_86.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_6_25.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_56_95.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_8_29.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_131_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_214_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_138_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_221_74.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_158_45.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_56_92.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_85.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_211_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_189_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_71_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_137_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_140_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_109_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_59_96.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_208_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_122_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_13_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_217_70.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_92_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_20_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_200_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_30.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_107_41.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_201_53.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_53_91.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_215_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_80_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_187_42.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_166_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_218_74.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_49_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_176_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_165_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_152_58.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_204_86.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_8_30.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_30_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_137_41.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_149_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_187_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_208_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_11_31.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_212_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_205_84.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_155_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_157_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_196_51.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_215_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_182_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_160_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_10_25.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_53.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_13_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_99_42.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_32_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_202_84.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_80_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_153_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_79_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_100_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_85_30.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_147_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_186_40.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_215_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_21.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_181_34.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_88_29.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_158_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_12_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_81.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_220_74.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_90_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_204_79.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_86_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_73_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_202_83.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_217_74.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_217_73.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_23.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_140_45.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_95_41.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_212_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_92_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_183_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_199_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_209_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_211_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_202_53.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_201_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_125_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_83_24.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_81_22.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_70_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_57_96.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_136_42.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_206_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_101_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_219_73.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_14_12.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_159_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_56_94.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_11_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_28.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_129_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_137_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_202_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_213_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_219_75.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_79_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_84_25.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_84_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_180_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_177_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_210_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_201_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_70_17.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_217_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_182_34.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_193_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_218_76.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_161_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_214_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_209_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_88_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_202_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_108_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_6_26.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_167_34.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_198_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_55_94.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_70_14.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_142_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_214_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_157_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_155_51.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_48_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_119_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_59_97.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_180_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_95_43.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_90_35.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_85_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_49_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_210_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_213_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_198_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_47_81.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_7_30.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_213_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_86_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_89_29.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_204_84.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_129_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_65_11.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_205_82.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_82.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_217_72.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_141_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_197_51.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_180_35.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_142_54.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_78_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_207_79.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_217_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_87_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_135_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_119_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_124_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_8_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_127_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_203_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/40X/nonT_127_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_39_9.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_65_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_39_10.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_3_12.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_105_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_104_31.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_107_34.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_106_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_40_10.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ea0c559b-d96a-4de7-8e24-8d0f5dfe4063/20X/nonT_5_10.tiff
+ 73%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                   | 71/97 [45:36:40<13:08:57, 1820.67s/it]4975
+ 74%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                | 72/97 [45:50:37<10:35:41, 1525.66s/it]25042
+ 75%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                             | 73/97 [47:05:13<16:04:18, 2410.76s/it]15125
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_27_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_89_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_103_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_11_92.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_29_110.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_119_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_17_99.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_174_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_173_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_63_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_20_106.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_107_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_12_90.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_79_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_90_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_56.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_28_113.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_181_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_87_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_41_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_96_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_87_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_106_132.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_127_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_102_132.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_77_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_72_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_75_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_106_130.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_49_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_84_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_99_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_15_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_84_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_108_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_116_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_35_119.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_174_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_56_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_83_16.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_108_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_124_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_82_16.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_88_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_109.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_92_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_127_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_72.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_61_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_84_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_154_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_50.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_95_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_93_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_53_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_132_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_85_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_81_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_92_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_22_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_110_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_48.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_107_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_30_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_114_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_42_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_46_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_141_110.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_82_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_144_109.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_17_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_103_133.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_119_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_98_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_112_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_58_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_45.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_27_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_111_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_21_103.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_153_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_90_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_28_109.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_91_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_100_132.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_16_100.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_12_81.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_28_110.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_109_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_84_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_39_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_79.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_27_106.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_73_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_133_112.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_105_16.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_110_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_72_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_58.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_54.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_174_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_11_73.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_86_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_82_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_112_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_13_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_24_112.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_91_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_111_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_126_116.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_108.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_23_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_15_93.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_90_130.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_93.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_35_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_109_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_87_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_109_130.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_118_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_181_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_12_70.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_103_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_126_21.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_127_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_58.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_22_103.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_48_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_85_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_71_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_97_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_29_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_102_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_113_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_104_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_83_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_84_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_110_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_47_119.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_30_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_103_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_82_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_110_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_94_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_41_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_76_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_130_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_26_109.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_33_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_26_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_105_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_52_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_91_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_134_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_58_21.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_101_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_65_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_87_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_32_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_103_130.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_124_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_28_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_88_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_83_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_174_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_19_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_40_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_21_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_50_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_113_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_99_132.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_23_109.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_95_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_41_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_108_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_60_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_52_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_21_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_104_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_29_113.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_106.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_99_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_116_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_88_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_18_103.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_36_116.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_111_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_22_106.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_57_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_103_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_51_24.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_22_108.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_117_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_46.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_164_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_59_20.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_74_14.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_106_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_23_108.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_56_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_84.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_89_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_149_106.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_23_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_37_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_127_116.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_54.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_111_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_113.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_92_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_40_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_24_110.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_98_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_60_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_181_55.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_128_116.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_61_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_112_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_106_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_16_97.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_83_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_123_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_172_67.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_74_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_68_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_22_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_59_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_24_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_181_51.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_30_110.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_119_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_83_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_85.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_73_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_15_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_180_50.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_28_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_128_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_34_116.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_48_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_53.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_107_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_89_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_102_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_57_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_85_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_69.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_80_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_21_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_20_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_115_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_60.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_91_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_110_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_132_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_119_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_37_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_111.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_91_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_86_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_119_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_37.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_115_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_85_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_124_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_66.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_23_106.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_76.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_24_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_44_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_96_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_67_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_37_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_10_88.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_85_125.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_87_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_93_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_26_113.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_50.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_30_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_70_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_126_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_47.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_57.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_35_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_93_124.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_95_130.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_149_105.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_175_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_82_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_100_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_100_18.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_35_32.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_34_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_26_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_97_131.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_97_132.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_112.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_144_21.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_97_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_104_121.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_22_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_104_19.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_31_115.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_13_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_15_96.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_19_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_24_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_176_61.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_15_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_31_111.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_75_127.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_115_128.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_16_58.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_25_110.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_129_114.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_110_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_37_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_21_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_65.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_43_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_98_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_179_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_174_45.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_125_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_14_62.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_57_126.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_109_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_73_14.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_125_117.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_177_63.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_29_109.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_26_111.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_59.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_178_50.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_26_107.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_99_122.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_113_123.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_130_118.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_172_68.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_150_27.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/40X/nonT_49_120.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_88_33.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_11_53.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_11_52.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_90_28.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_88_31.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_12_56.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_55_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_42_64.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4962c0e1-8fb7-4d01-ab55-490f513ec623/20X/nonT_11_54.tiff
+ 76%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                         | 74/97 [47:48:19<15:44:10, 2463.07s/it]19233
+ 77%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                      | 75/97 [48:42:58<16:32:57, 2708.05s/it]12622
+ 78%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                   | 76/97 [49:17:57<14:43:48, 2525.18s/it]8438
+ 79%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                | 77/97 [49:41:32<12:10:41, 2192.08s/it]28331
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                             | 78/97 [50:59:12<15:28:36, 2932.47s/it]12899
+ 81%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                         | 79/97 [51:33:26<13:20:44, 2669.12s/it]17884
+ 82%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                      | 80/97 [52:21:57<12:56:48, 2741.66s/it]23264
+ 84%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                   | 81/97 [53:27:57<13:48:32, 3107.04s/it]11187
+ 85%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                | 82/97 [53:57:21<11:16:01, 2704.08s/it]7930
+ 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                             | 83/97 [54:18:42<8:51:20, 2277.19s/it]12200
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                         | 84/97 [54:52:13<7:56:06, 2197.40s/it]13042
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                      | 85/97 [55:28:22<7:17:47, 2188.97s/it]16965
+ 89%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                   | 86/97 [56:15:57<7:17:55, 2388.69s/it]6809
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                | 87/97 [56:33:53<5:32:27, 1994.76s/it]15186
+ 91%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                             | 88/97 [57:15:33<5:21:58, 2146.45s/it]22018
+ 92%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                         | 89/97 [58:16:43<5:47:09, 2603.64s/it]7961
+ 93%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                      | 90/97 [58:38:24<4:18:09, 2212.79s/it]1307
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4b860476-9bac-40c6-b6ea-8c1aaec737e1/40X/nonT_41_88.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4b860476-9bac-40c6-b6ea-8c1aaec737e1/40X/nonT_39_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4b860476-9bac-40c6-b6ea-8c1aaec737e1/40X/nonT_43_88.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4b860476-9bac-40c6-b6ea-8c1aaec737e1/40X/nonT_42_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/4b860476-9bac-40c6-b6ea-8c1aaec737e1/40X/nonT_42_89.tiff
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                   | 91/97 [58:41:44<2:40:54, 1609.01s/it]11455
+ 95%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                | 92/97 [59:12:19<2:19:43, 1676.61s/it]7097
+ 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏            | 93/97 [59:29:34<1:38:56, 1484.14s/it]3219
+ 97%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎         | 94/97 [59:35:30<57:17, 1145.80s/it]23902
+ 98%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌      | 95/97 [60:25:39<56:49, 1704.60s/it]9234
+ 99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊   | 96/97 [60:43:11<25:09, 1509.10s/it]6138
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97/97 [60:54:48<00:00, 1265.41s/it]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97/97 [60:54:48<00:00, 2260.71s/it]

@@ -1,0 +1,27 @@
+# dataset wrapper config
+batch_size: 256 
+
+dataset:
+  s: 1
+  input_shape: (224,224,3)
+  num_workers: 24
+  valid_size: 0.1
+
+# training config
+epochs: 90
+eval_every_n_epochs: 1
+fine_tune_from: ''
+log_every_n_steps: 25
+weight_decay: 10e-6
+fp16_precision: False
+n_gpu: 4
+gpu_ids: (0,1,2,3)
+
+model:
+  out_dim: 512
+  base_model: "resnet18"
+
+## criterion config
+loss:
+  temperature: 0.5
+  use_cosine_similarity: True

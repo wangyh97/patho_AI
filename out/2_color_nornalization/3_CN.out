@@ -1,0 +1,370 @@
+2022-12-24 16:34:24.844243: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+97
+  0%|                                                                                                                                                                                                                                                                                                                                        | 0/97 [00:00<?, ?it/s]16942
+  1%|███▏                                                                                                                                                                                                                                                                                                                       | 1/97 [39:49<63:43:14, 2389.52s/it]5826
+  2%|██████▍                                                                                                                                                                                                                                                                                                                    | 2/97 [52:03<37:21:55, 1415.96s/it]10757
+  3%|█████████▋                                                                                                                                                                                                                                                                                                               | 3/97 [1:16:28<37:32:53, 1438.01s/it]9802
+  4%|████████████▉                                                                                                                                                                                                                                                                                                            | 4/97 [1:38:31<35:58:53, 1392.84s/it]9086
+  5%|████████████████▏                                                                                                                                                                                                                                                                                                        | 5/97 [1:58:08<33:36:05, 1314.85s/it]11717
+  6%|███████████████████▎                                                                                                                                                                                                                                                                                                     | 6/97 [2:26:11<36:24:12, 1440.14s/it]6009
+  7%|██████████████████████▌                                                                                                                                                                                                                                                                                                  | 7/97 [2:39:51<30:56:09, 1237.44s/it]9739
+  8%|█████████████████████████▊                                                                                                                                                                                                                                                                                               | 8/97 [3:01:50<31:13:54, 1263.30s/it]16661
+  9%|█████████████████████████████                                                                                                                                                                                                                                                                                            | 9/97 [3:43:38<40:23:37, 1652.48s/it]10370
+ 10%|████████████████████████████████▏                                                                                                                                                                                                                                                                                       | 10/97 [4:06:38<37:54:06, 1568.35s/it]2836
+ 11%|███████████████████████████████████▍                                                                                                                                                                                                                                                                                    | 11/97 [4:12:30<28:34:06, 1195.89s/it]14409
+ 12%|██████████████████████████████████████▌                                                                                                                                                                                                                                                                                 | 12/97 [4:44:57<33:38:12, 1424.62s/it]7243
+ 13%|█████████████████████████████████████████▊                                                                                                                                                                                                                                                                              | 13/97 [5:01:31<30:11:48, 1294.15s/it]861
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_68_8.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_5_99.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_74_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_4_96.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_4_95.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_5_97.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_52_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_70_9.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_7_98.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_2_93.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_37_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_69_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_48_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_42_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_83_10.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_29_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_40_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_72_9.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_54_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_45_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_21_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_9_104.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_0_88.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_60_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_3_100.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_81_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_55_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_1_90.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_5_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_64_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_57_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_73_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_1_91.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_83_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_78_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_3_97.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_5_98.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_7_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_25_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_84_15.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_75_11.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_0_99.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_27_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_40_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_3_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_63_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_6_97.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_66_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_39_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_2_98.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_68_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_41_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_50_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_30_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_79_5.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_2_96.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_69_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_51_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_56_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_4_98.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_0_89.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_66_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_68_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_53_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_51_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_47_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_55_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_82_12.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_42_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_0_101.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_70_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_68_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_1_88.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_46_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_7_99.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_39_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_29_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_31_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_73_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_34_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_64_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_40_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_56_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_62_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_50_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_26_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_71_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_80_6.tiff
+ColorNormalization.py:112: RuntimeWarning: Degrees of freedom <= 0 for slice
+  _, eigvecs = cp.linalg.eigh(cp.cov(ODhat.T))
+/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/cupy/_statistics/correlation.py:141: RuntimeWarning: divide by zero encountered in double_scalars
+  out = X.dot(X.T.conj()) * (1 / cupy.float64(fact))
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_60_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_80_9.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_57_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_36_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_47_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_51_3.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_0_87.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_48_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_4_102.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_6_100.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_77_11.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_57_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_41_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_53_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_53_6.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_48_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_3_95.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_47_4.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_37_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_28_1.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_79_12.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_23_0.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_36_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_75_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_4_93.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_4_100.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_49_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/40X/nonT_33_2.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/20X/nonT_41_7.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/20X/nonT_2_49.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/20X/nonT_0_44.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/95cbd3e7-5d6a-428a-a2de-1c20b56896f6/20X/nonT_33_3.tiff
+ 14%|█████████████████████████████████████████████▏                                                                                                                                                                                                                                                                           | 14/97 [5:03:12<21:31:46, 933.81s/it]10236
+ 15%|████████████████████████████████████████████████▏                                                                                                                                                                                                                                                                       | 15/97 [5:27:51<25:00:33, 1097.97s/it]6137
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/16c68e40-fc90-495a-b856-fe1f11f82143/40X/nonT_215_70.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/16c68e40-fc90-495a-b856-fe1f11f82143/40X/nonT_216_71.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/16c68e40-fc90-495a-b856-fe1f11f82143/40X/nonT_4_38.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/16c68e40-fc90-495a-b856-fe1f11f82143/20X/nonT_108_35.tiff
+ 16%|███████████████████████████████████████████████████▍                                                                                                                                                                                                                                                                    | 16/97 [5:42:06<23:03:42, 1024.97s/it]12184
+ 18%|██████████████████████████████████████████████████████▋                                                                                                                                                                                                                                                                 | 17/97 [6:09:43<26:59:46, 1214.84s/it]8142
+ 19%|█████████████████████████████████████████████████████████▉                                                                                                                                                                                                                                                              | 18/97 [6:28:26<26:03:08, 1187.19s/it]1326
+ 20%|█████████████████████████████████████████████████████████████▎                                                                                                                                                                                                                                                           | 19/97 [6:31:17<19:06:49, 882.17s/it]6739
+ 21%|████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                                        | 20/97 [6:45:49<18:48:06, 879.05s/it]25205
+ 22%|███████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                                    | 21/97 [7:49:39<37:15:37, 1764.96s/it]2556
+ 23%|██████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                                                                                 | 22/97 [7:55:28<27:54:43, 1339.78s/it]9010
+ 24%|█████████████████████████████████████████████████████████████████████████▉                                                                                                                                                                                                                                              | 23/97 [8:16:35<27:05:26, 1317.92s/it]20938
+ 25%|█████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                                                          | 24/97 [9:07:19<37:13:47, 1836.00s/it]18313
+ 26%|████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                                                                       | 25/97 [9:50:47<41:21:14, 2067.70s/it]11720
+ 27%|███████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                                                                                   | 26/97 [10:16:50<37:47:23, 1916.11s/it]5774
+ 28%|██████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                                | 27/97 [10:30:25<30:50:17, 1585.96s/it]11364
+ 29%|█████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                                                             | 28/97 [10:56:02<30:06:59, 1571.29s/it]13564
+ 30%|████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                                                                                                          | 29/97 [11:28:45<31:53:51, 1688.70s/it]7940
+ 31%|████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                                      | 30/97 [11:46:01<27:47:06, 1492.93s/it]11647
+ 32%|███████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                                                   | 31/97 [12:13:14<28:08:18, 1534.83s/it]812
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/9e56e37f-51e4-49b0-a8ca-de0d81109bd5/40X/nonT_198_40.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/9e56e37f-51e4-49b0-a8ca-de0d81109bd5/40X/nonT_193_39.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/9e56e37f-51e4-49b0-a8ca-de0d81109bd5/40X/nonT_5_129.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/9e56e37f-51e4-49b0-a8ca-de0d81109bd5/40X/nonT_186_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/9e56e37f-51e4-49b0-a8ca-de0d81109bd5/40X/nonT_185_36.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/9e56e37f-51e4-49b0-a8ca-de0d81109bd5/20X/nonT_86_67.tiff
+ 33%|██████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                                                | 32/97 [12:15:04<19:59:49, 1107.53s/it]10725
+ 34%|█████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                                             | 33/97 [12:41:24<22:12:33, 1249.28s/it]1506
+ 35%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                                                          | 34/97 [12:44:45<16:21:23, 934.66s/it]11768
+ 36%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                                      | 35/97 [13:11:47<19:38:48, 1140.78s/it]1823
+ 37%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                                                    | 36/97 [13:16:04<14:50:28, 875.87s/it]2819
+ 38%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                                                                                 | 37/97 [13:22:12<12:03:31, 723.52s/it]752
+ 39%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                                              | 38/97 [13:23:49<8:46:28, 535.40s/it]6996
+ 40%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                          | 39/97 [13:40:42<10:56:06, 678.73s/it]28138
+ 41%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                                                                      | 40/97 [14:49:45<27:12:04, 1717.97s/it]14988
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/8c5a66d9-2dfa-4817-b21b-92d769647ea5/40X/nonT_1_168.tiff
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/8c5a66d9-2dfa-4817-b21b-92d769647ea5/40X/nonT_5_168.tiff
+ 42%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                                   | 41/97 [15:24:43<28:29:51, 1832.00s/it]744
+ 43%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                                | 42/97 [15:26:28<20:04:30, 1314.01s/it]3753
+ 44%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                                                             | 43/97 [15:34:18<15:54:37, 1060.70s/it]2294
+ 45%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                                          | 44/97 [15:39:58<12:26:00, 844.54s/it]11639
+ 46%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                                      | 45/97 [16:07:25<15:40:33, 1085.26s/it]19648
+ 47%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                                                                                   | 46/97 [16:55:39<23:03:42, 1627.89s/it]10920
+ 48%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                                | 47/97 [17:21:40<22:19:41, 1607.63s/it]20469
+ 49%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                                             | 48/97 [18:11:30<27:31:47, 2022.59s/it]810
+ 51%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                                                                                          | 49/97 [18:13:20<19:18:53, 1448.61s/it]11090
+ 52%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                                      | 50/97 [18:39:24<19:21:51, 1483.21s/it]1712
+ 53%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                                   | 51/97 [18:43:13<14:08:51, 1107.20s/it]11914
+ 54%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                                                                                | 52/97 [19:12:04<16:10:34, 1294.10s/it]10531
+ 55%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                                             | 53/97 [19:36:57<16:32:46, 1353.78s/it]22632
+ 56%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                                         | 54/97 [20:29:09<22:32:33, 1887.29s/it]17530
+ 57%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                                      | 55/97 [21:12:23<24:29:30, 2099.31s/it]15199
+ 58%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                                   | 56/97 [21:48:26<24:07:34, 2118.40s/it]15474
+ 59%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                                | 57/97 [22:25:55<23:58:26, 2157.65s/it]22882
+ 60%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                                             | 58/97 [23:20:20<26:58:26, 2489.92s/it]21075
+ 61%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                                         | 59/97 [24:11:01<28:01:36, 2655.17s/it]15364
+ 62%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                                                                      | 60/97 [24:48:49<26:05:41, 2538.96s/it]6095
+ 63%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                                   | 61/97 [25:03:17<20:22:40, 2037.79s/it]25986
+ 64%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                                | 62/97 [26:10:48<25:41:02, 2641.78s/it]4502
+ 65%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                                                                             | 63/97 [26:21:19<19:15:11, 2038.57s/it]9913
+ 66%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                                         | 64/97 [26:44:39<16:55:47, 1846.89s/it]4335
+ 67%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                                      | 65/97 [26:54:38<13:05:21, 1472.56s/it]18279
+ 68%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                                                                   | 66/97 [27:40:13<15:56:27, 1851.21s/it]11623
+ 69%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                                | 67/97 [28:07:20<14:51:55, 1783.85s/it]3819
+ 70%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                                             | 68/97 [28:16:39<11:24:43, 1416.66s/it]8291
+all pixels are transparent
+/mnt/wangyh/TCGA_patches/L/ca905581-20aa-40a9-a176-54608922d878/40X/nonT_151_127.tiff
+ 71%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                                                                         | 69/97 [28:36:06<10:26:09, 1341.75s/it]26258
+ 72%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                                      | 70/97 [29:40:57<15:47:51, 2106.36s/it]13263
+ 73%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                                   | 71/97 [30:12:33<14:45:25, 2043.27s/it]12696
+ 74%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                                                | 72/97 [30:42:00<13:36:52, 1960.51s/it]15448
+ 75%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                                             | 73/97 [31:18:53<13:34:25, 2036.08s/it]16147
+ 76%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                                         | 74/97 [31:57:47<13:34:44, 2125.42s/it]8527
+ 77%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                      | 75/97 [32:17:02<11:12:34, 1834.29s/it]8415
+ 78%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                                                   | 76/97 [32:37:07<9:35:57, 1645.58s/it]4600
+ 79%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                                                                | 77/97 [32:46:51<7:22:25, 1327.26s/it]11406
+ 80%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                                             | 78/97 [33:14:34<7:32:10, 1427.91s/it]16298
+ 81%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                                                          | 79/97 [33:53:25<8:29:40, 1698.91s/it]11769
+ 82%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                                                      | 80/97 [34:21:58<8:02:34, 1703.18s/it]17985
+ 84%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                                   | 81/97 [35:07:15<8:55:16, 2007.26s/it]1834
+ 85%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                                | 82/97 [35:11:23<6:09:49, 1479.31s/it]7399
+ 86%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                                             | 83/97 [35:29:09<5:16:13, 1355.26s/it]11972
+ 87%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏                                         | 84/97 [35:57:49<5:17:23, 1464.85s/it]7668
+ 88%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                                      | 85/97 [36:17:01<4:34:12, 1371.07s/it]14815
+ 89%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌                                   | 86/97 [36:54:05<4:58:14, 1626.76s/it]15432
+ 90%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊                                | 87/97 [37:33:31<5:08:07, 1848.73s/it]9331
+ 91%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████                             | 88/97 [37:56:20<4:15:43, 1704.80s/it]23172
+ 92%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎                         | 89/97 [38:54:10<4:57:54, 2234.30s/it]16918
+ 93%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▍                      | 90/97 [39:36:53<4:32:10, 2332.96s/it]13396
+ 94%|████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▋                   | 91/97 [40:07:42<3:38:46, 2187.73s/it]18403
+ 95%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▉                | 92/97 [40:51:56<3:13:58, 2327.65s/it]8855
+ 96%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▏            | 93/97 [41:13:23<2:14:21, 2015.27s/it]19811
+ 97%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▎         | 94/97 [42:03:13<1:55:22, 2307.66s/it]11806
+ 98%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▌      | 95/97 [42:31:31<1:10:49, 2124.85s/it]7427
+ 99%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████▊   | 96/97 [42:48:26<29:51, 1791.81s/it]14261
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97/97 [43:23:24<00:00, 1883.64s/it]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 97/97 [43:23:24<00:00, 1610.35s/it]

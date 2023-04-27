@@ -1,15 +1,7 @@
-/config/*X/
+/data/*
 
-/TCGA_svs/
+/processing/resnext/output/*
 
-/TCGA_patches/
+/config/data_segmentation_csv/*
 
-/CN_test/
-
-/processing/*.out
-
-/processing/resnext/output
-
-config/data_segmentation_csv/*
-
-processing/result_rm.npy
+/processing/simclr_feature_extractor/runs/Apr20_10-20-33_ubuntu-T640/checkpoints/*

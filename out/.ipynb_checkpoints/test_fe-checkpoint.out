@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "feature_extraction.py", line 114, in <module>
+    main()
+  File "feature_extraction.py", line 67, in main
+    state_dict = torch.load('simclr_feature_extractor/runs/Apr05_00-53-45_ubuntu-T640/checkpoints/model.pth')
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/serialization.py", line 712, in load
+    return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/serialization.py", line 1049, in _load
+    result = unpickler.load()
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/serialization.py", line 1019, in persistent_load
+    load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/serialization.py", line 1001, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/serialization.py", line 175, in default_restore_location
+    result = fn(storage, location)
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/serialization.py", line 157, in _cuda_deserialize
+    return obj.cuda(device)
+  File "/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/_utils.py", line 78, in _cuda
+    return torch._UntypedStorage(self.size(), device=torch.device('cuda')).copy_(self, non_blocking)
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

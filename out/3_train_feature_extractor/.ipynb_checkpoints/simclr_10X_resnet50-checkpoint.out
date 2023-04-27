@@ -1,0 +1,905 @@
+Please install apex for mixed precision training from: https://github.com/NVIDIA/apex
+Running on: cuda
+2023-04-20 10:20:33.999511: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcudart.so.11.0
+start training
+get 10X grouping info successfully
+/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torchvision/models/_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and will be removed in 0.15, please use 'weights' instead.
+  warnings.warn(
+/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torchvision/models/_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and will be removed in 0.15. The current behavior is equivalent to passing `weights=None`.
+  warnings.warn(msg)
+Feature extractor: resnet50
+Pre-trained weights not found. Training from scratch.
+[0/90] step: 0 train_loss: 5.544
+[0/90] step: 100 train_loss: 5.545
+[0/90] step: 200 train_loss: 5.543
+[0/90] step: 300 train_loss: 5.538
+[0/90] step: 400 train_loss: 5.539
+[0/90] step: 500 train_loss: 5.534
+[0/90] step: 600 train_loss: 5.538
+[0/90] step: 700 train_loss: 5.542
+[0/90] step: 800 train_loss: 5.549
+[0/90] val_loss: 5.526
+saved
+/home/wangyh/miniconda3/envs/patho_AI/lib/python3.8/site-packages/torch/optim/lr_scheduler.py:728: UserWarning: To get the last learning rate computed by the scheduler, please use `get_last_lr()`.
+  warnings.warn("To get the last learning rate computed by the scheduler, "
+[1/90] step: 900 train_loss: 5.499
+[1/90] step: 1000 train_loss: 5.372
+[1/90] step: 1100 train_loss: 5.442
+[1/90] step: 1200 train_loss: 5.520
+[1/90] step: 1300 train_loss: 5.412
+[1/90] step: 1400 train_loss: 5.414
+[1/90] step: 1500 train_loss: 5.385
+[1/90] step: 1600 train_loss: 5.330
+[1/90] val_loss: 5.344
+saved
+[2/90] step: 1700 train_loss: 5.317
+[2/90] step: 1800 train_loss: 5.392
+[2/90] step: 1900 train_loss: 5.282
+[2/90] step: 2000 train_loss: 5.279
+[2/90] step: 2100 train_loss: 5.195
+[2/90] step: 2200 train_loss: 5.203
+[2/90] step: 2300 train_loss: 5.198
+[2/90] step: 2400 train_loss: 5.157
+[2/90] val_loss: 5.191
+saved
+[3/90] step: 2500 train_loss: 5.200
+[3/90] step: 2600 train_loss: 5.124
+[3/90] step: 2700 train_loss: 5.116
+[3/90] step: 2800 train_loss: 5.010
+[3/90] step: 2900 train_loss: 5.039
+[3/90] step: 3000 train_loss: 5.043
+[3/90] step: 3100 train_loss: 5.017
+[3/90] step: 3200 train_loss: 5.124
+[3/90] val_loss: 4.994
+saved
+[4/90] step: 3300 train_loss: 5.111
+[4/90] step: 3400 train_loss: 4.866
+[4/90] step: 3500 train_loss: 4.845
+[4/90] step: 3600 train_loss: 5.009
+[4/90] step: 3700 train_loss: 4.913
+[4/90] step: 3800 train_loss: 4.853
+[4/90] step: 3900 train_loss: 4.856
+[4/90] step: 4000 train_loss: 4.798
+[4/90] val_loss: 4.752
+saved
+[5/90] step: 4100 train_loss: 4.803
+[5/90] step: 4200 train_loss: 4.648
+[5/90] step: 4300 train_loss: 4.749
+[5/90] step: 4400 train_loss: 4.637
+[5/90] step: 4500 train_loss: 4.549
+[5/90] step: 4600 train_loss: 4.714
+[5/90] step: 4700 train_loss: 4.655
+[5/90] step: 4800 train_loss: 4.640
+[5/90] step: 4900 train_loss: 4.569
+[5/90] val_loss: 4.557
+saved
+[6/90] step: 5000 train_loss: 4.550
+[6/90] step: 5100 train_loss: 4.450
+[6/90] step: 5200 train_loss: 4.566
+[6/90] step: 5300 train_loss: 4.529
+[6/90] step: 5400 train_loss: 4.536
+[6/90] step: 5500 train_loss: 4.529
+[6/90] step: 5600 train_loss: 4.510
+[6/90] step: 5700 train_loss: 4.486
+[6/90] val_loss: 4.475
+saved
+[7/90] step: 5800 train_loss: 4.515
+[7/90] step: 5900 train_loss: 4.496
+[7/90] step: 6000 train_loss: 4.389
+[7/90] step: 6100 train_loss: 4.441
+[7/90] step: 6200 train_loss: 4.512
+[7/90] step: 6300 train_loss: 4.357
+[7/90] step: 6400 train_loss: 4.461
+[7/90] step: 6500 train_loss: 4.500
+[7/90] val_loss: 4.406
+saved
+[8/90] step: 6600 train_loss: 4.391
+[8/90] step: 6700 train_loss: 4.476
+[8/90] step: 6800 train_loss: 4.397
+[8/90] step: 6900 train_loss: 4.405
+[8/90] step: 7000 train_loss: 4.351
+[8/90] step: 7100 train_loss: 4.380
+[8/90] step: 7200 train_loss: 4.297
+[8/90] step: 7300 train_loss: 4.391
+[8/90] val_loss: 4.300
+saved
+[9/90] step: 7400 train_loss: 4.344
+[9/90] step: 7500 train_loss: 4.272
+[9/90] step: 7600 train_loss: 4.317
+[9/90] step: 7700 train_loss: 4.346
+[9/90] step: 7800 train_loss: 4.321
+[9/90] step: 7900 train_loss: 4.219
+[9/90] step: 8000 train_loss: 4.253
+[9/90] step: 8100 train_loss: 4.277
+[9/90] val_loss: 4.231
+saved
+[10/90] step: 8200 train_loss: 4.274
+[10/90] step: 8300 train_loss: 4.262
+[10/90] step: 8400 train_loss: 4.281
+[10/90] step: 8500 train_loss: 4.247
+[10/90] step: 8600 train_loss: 4.186
+[10/90] step: 8700 train_loss: 4.182
+[10/90] step: 8800 train_loss: 4.246
+[10/90] step: 8900 train_loss: 4.213
+[10/90] step: 9000 train_loss: 4.256
+[10/90] val_loss: 4.169
+saved
+[11/90] step: 9100 train_loss: 4.246
+[11/90] step: 9200 train_loss: 4.160
+[11/90] step: 9300 train_loss: 4.156
+[11/90] step: 9400 train_loss: 4.229
+[11/90] step: 9500 train_loss: 4.122
+[11/90] step: 9600 train_loss: 4.143
+[11/90] step: 9700 train_loss: 4.076
+[11/90] step: 9800 train_loss: 4.094
+[11/90] val_loss: 4.143
+saved
+[12/90] step: 9900 train_loss: 4.107
+[12/90] step: 10000 train_loss: 4.171
+[12/90] step: 10100 train_loss: 4.121
+[12/90] step: 10200 train_loss: 4.124
+[12/90] step: 10300 train_loss: 4.011
+[12/90] step: 10400 train_loss: 4.100
+[12/90] step: 10500 train_loss: 4.097
+[12/90] step: 10600 train_loss: 4.078
+[12/90] val_loss: 4.063
+saved
+[13/90] step: 10700 train_loss: 4.057
+[13/90] step: 10800 train_loss: 4.041
+[13/90] step: 10900 train_loss: 4.051
+[13/90] step: 11000 train_loss: 4.030
+[13/90] step: 11100 train_loss: 4.037
+[13/90] step: 11200 train_loss: 4.024
+[13/90] step: 11300 train_loss: 4.036
+[13/90] step: 11400 train_loss: 4.021
+[13/90] val_loss: 4.029
+saved
+[14/90] step: 11500 train_loss: 4.060
+[14/90] step: 11600 train_loss: 4.023
+[14/90] step: 11700 train_loss: 4.091
+[14/90] step: 11800 train_loss: 4.023
+[14/90] step: 11900 train_loss: 3.992
+[14/90] step: 12000 train_loss: 4.060
+[14/90] step: 12100 train_loss: 4.078
+[14/90] step: 12200 train_loss: 3.967
+[14/90] val_loss: 4.040
+[15/90] step: 12300 train_loss: 4.056
+[15/90] step: 12400 train_loss: 4.003
+[15/90] step: 12500 train_loss: 3.997
+[15/90] step: 12600 train_loss: 3.937
+[15/90] step: 12700 train_loss: 3.989
+[15/90] step: 12800 train_loss: 3.967
+[15/90] step: 12900 train_loss: 3.985
+[15/90] step: 13000 train_loss: 3.991
+[15/90] step: 13100 train_loss: 3.963
+[15/90] val_loss: 3.954
+saved
+[16/90] step: 13200 train_loss: 3.956
+[16/90] step: 13300 train_loss: 3.990
+[16/90] step: 13400 train_loss: 3.947
+[16/90] step: 13500 train_loss: 3.952
+[16/90] step: 13600 train_loss: 3.953
+[16/90] step: 13700 train_loss: 3.909
+[16/90] step: 13800 train_loss: 3.967
+[16/90] step: 13900 train_loss: 3.912
+[16/90] val_loss: 3.944
+saved
+[17/90] step: 14000 train_loss: 3.994
+[17/90] step: 14100 train_loss: 3.944
+[17/90] step: 14200 train_loss: 3.939
+[17/90] step: 14300 train_loss: 4.016
+[17/90] step: 14400 train_loss: 3.895
+[17/90] step: 14500 train_loss: 3.936
+[17/90] step: 14600 train_loss: 3.942
+[17/90] step: 14700 train_loss: 3.901
+[17/90] val_loss: 3.915
+saved
+[18/90] step: 14800 train_loss: 3.901
+[18/90] step: 14900 train_loss: 3.986
+[18/90] step: 15000 train_loss: 3.917
+[18/90] step: 15100 train_loss: 3.891
+[18/90] step: 15200 train_loss: 3.937
+[18/90] step: 15300 train_loss: 3.943
+[18/90] step: 15400 train_loss: 3.870
+[18/90] step: 15500 train_loss: 3.903
+[18/90] val_loss: 3.893
+saved
+[19/90] step: 15600 train_loss: 3.917
+[19/90] step: 15700 train_loss: 3.882
+[19/90] step: 15800 train_loss: 3.902
+[19/90] step: 15900 train_loss: 3.944
+[19/90] step: 16000 train_loss: 3.886
+[19/90] step: 16100 train_loss: 3.907
+[19/90] step: 16200 train_loss: 3.905
+[19/90] step: 16300 train_loss: 3.893
+[19/90] val_loss: 3.878
+saved
+[20/90] step: 16400 train_loss: 3.883
+[20/90] step: 16500 train_loss: 3.878
+[20/90] step: 16600 train_loss: 3.874
+[20/90] step: 16700 train_loss: 3.889
+[20/90] step: 16800 train_loss: 3.872
+[20/90] step: 16900 train_loss: 3.851
+[20/90] step: 17000 train_loss: 3.850
+[20/90] step: 17100 train_loss: 3.880
+[20/90] step: 17200 train_loss: 3.849
+[20/90] val_loss: 3.873
+saved
+[21/90] step: 17300 train_loss: 3.867
+[21/90] step: 17400 train_loss: 3.848
+[21/90] step: 17500 train_loss: 3.895
+[21/90] step: 17600 train_loss: 3.854
+[21/90] step: 17700 train_loss: 3.834
+[21/90] step: 17800 train_loss: 3.869
+[21/90] step: 17900 train_loss: 3.893
+[21/90] step: 18000 train_loss: 3.850
+[21/90] val_loss: 3.840
+saved
+[22/90] step: 18100 train_loss: 3.865
+[22/90] step: 18200 train_loss: 3.821
+[22/90] step: 18300 train_loss: 3.826
+[22/90] step: 18400 train_loss: 3.815
+[22/90] step: 18500 train_loss: 3.845
+[22/90] step: 18600 train_loss: 3.861
+[22/90] step: 18700 train_loss: 3.790
+[22/90] step: 18800 train_loss: 3.855
+[22/90] val_loss: 3.824
+saved
+[23/90] step: 18900 train_loss: 3.828
+[23/90] step: 19000 train_loss: 3.849
+[23/90] step: 19100 train_loss: 3.845
+[23/90] step: 19200 train_loss: 3.832
+[23/90] step: 19300 train_loss: 3.816
+[23/90] step: 19400 train_loss: 3.827
+[23/90] step: 19500 train_loss: 3.811
+[23/90] step: 19600 train_loss: 3.814
+[23/90] val_loss: 3.827
+[24/90] step: 19700 train_loss: 3.814
+[24/90] step: 19800 train_loss: 3.805
+[24/90] step: 19900 train_loss: 3.801
+[24/90] step: 20000 train_loss: 3.836
+[24/90] step: 20100 train_loss: 3.809
+[24/90] step: 20200 train_loss: 3.798
+[24/90] step: 20300 train_loss: 3.806
+[24/90] step: 20400 train_loss: 3.803
+[24/90] val_loss: 3.805
+saved
+[25/90] step: 20500 train_loss: 3.809
+[25/90] step: 20600 train_loss: 3.799
+[25/90] step: 20700 train_loss: 3.815
+[25/90] step: 20800 train_loss: 3.850
+[25/90] step: 20900 train_loss: 3.795
+[25/90] step: 21000 train_loss: 3.830
+[25/90] step: 21100 train_loss: 3.792
+[25/90] step: 21200 train_loss: 3.798
+[25/90] step: 21300 train_loss: 3.770
+[25/90] val_loss: 3.799
+saved
+[26/90] step: 21400 train_loss: 3.844
+[26/90] step: 21500 train_loss: 3.786
+[26/90] step: 21600 train_loss: 3.801
+[26/90] step: 21700 train_loss: 3.801
+[26/90] step: 21800 train_loss: 3.787
+[26/90] step: 21900 train_loss: 3.798
+[26/90] step: 22000 train_loss: 3.798
+[26/90] step: 22100 train_loss: 3.786
+[26/90] val_loss: 3.793
+saved
+[27/90] step: 22200 train_loss: 3.795
+[27/90] step: 22300 train_loss: 3.790
+[27/90] step: 22400 train_loss: 3.789
+[27/90] step: 22500 train_loss: 3.794
+[27/90] step: 22600 train_loss: 3.768
+[27/90] step: 22700 train_loss: 3.786
+[27/90] step: 22800 train_loss: 3.793
+[27/90] step: 22900 train_loss: 3.800
+[27/90] val_loss: 3.781
+saved
+[28/90] step: 23000 train_loss: 3.786
+[28/90] step: 23100 train_loss: 3.776
+[28/90] step: 23200 train_loss: 3.814
+[28/90] step: 23300 train_loss: 3.801
+[28/90] step: 23400 train_loss: 3.756
+[28/90] step: 23500 train_loss: 3.778
+[28/90] step: 23600 train_loss: 3.763
+[28/90] step: 23700 train_loss: 3.841
+[28/90] val_loss: 3.785
+[29/90] step: 23800 train_loss: 3.775
+[29/90] step: 23900 train_loss: 3.772
+[29/90] step: 24000 train_loss: 3.777
+[29/90] step: 24100 train_loss: 3.778
+[29/90] step: 24200 train_loss: 3.775
+[29/90] step: 24300 train_loss: 3.774
+[29/90] step: 24400 train_loss: 3.760
+[29/90] step: 24500 train_loss: 3.786
+[29/90] val_loss: 3.776
+saved
+[30/90] step: 24600 train_loss: 3.787
+[30/90] step: 24700 train_loss: 3.773
+[30/90] step: 24800 train_loss: 3.765
+[30/90] step: 24900 train_loss: 3.785
+[30/90] step: 25000 train_loss: 3.769
+[30/90] step: 25100 train_loss: 3.768
+[30/90] step: 25200 train_loss: 3.757
+[30/90] step: 25300 train_loss: 3.754
+[30/90] step: 25400 train_loss: 3.772
+[30/90] val_loss: 3.770
+saved
+[31/90] step: 25500 train_loss: 3.766
+[31/90] step: 25600 train_loss: 3.762
+[31/90] step: 25700 train_loss: 3.759
+[31/90] step: 25800 train_loss: 3.764
+[31/90] step: 25900 train_loss: 3.781
+[31/90] step: 26000 train_loss: 3.737
+[31/90] step: 26100 train_loss: 3.796
+[31/90] step: 26200 train_loss: 3.796
+[31/90] val_loss: 3.771
+[32/90] step: 26300 train_loss: 3.782
+[32/90] step: 26400 train_loss: 3.763
+[32/90] step: 26500 train_loss: 3.774
+[32/90] step: 26600 train_loss: 3.769
+[32/90] step: 26700 train_loss: 3.750
+[32/90] step: 26800 train_loss: 3.793
+[32/90] step: 26900 train_loss: 3.759
+[32/90] step: 27000 train_loss: 3.750
+[32/90] val_loss: 3.761
+saved
+[33/90] step: 27100 train_loss: 3.777
+[33/90] step: 27200 train_loss: 3.757
+[33/90] step: 27300 train_loss: 3.757
+[33/90] step: 27400 train_loss: 3.743
+[33/90] step: 27500 train_loss: 3.757
+[33/90] step: 27600 train_loss: 3.759
+[33/90] step: 27700 train_loss: 3.744
+[33/90] step: 27800 train_loss: 3.736
+[33/90] val_loss: 3.761
+saved
+[34/90] step: 27900 train_loss: 3.777
+[34/90] step: 28000 train_loss: 3.730
+[34/90] step: 28100 train_loss: 3.779
+[34/90] step: 28200 train_loss: 3.766
+[34/90] step: 28300 train_loss: 3.780
+[34/90] step: 28400 train_loss: 3.773
+[34/90] step: 28500 train_loss: 3.743
+[34/90] step: 28600 train_loss: 3.743
+[34/90] val_loss: 3.755
+saved
+[35/90] step: 28700 train_loss: 3.735
+[35/90] step: 28800 train_loss: 3.753
+[35/90] step: 28900 train_loss: 3.749
+[35/90] step: 29000 train_loss: 3.770
+[35/90] step: 29100 train_loss: 3.753
+[35/90] step: 29200 train_loss: 3.713
+[35/90] step: 29300 train_loss: 3.737
+[35/90] step: 29400 train_loss: 3.750
+[35/90] step: 29500 train_loss: 3.731
+[35/90] val_loss: 3.754
+saved
+[36/90] step: 29600 train_loss: 3.763
+[36/90] step: 29700 train_loss: 3.743
+[36/90] step: 29800 train_loss: 3.758
+[36/90] step: 29900 train_loss: 3.756
+[36/90] step: 30000 train_loss: 3.750
+[36/90] step: 30100 train_loss: 3.765
+[36/90] step: 30200 train_loss: 3.746
+[36/90] step: 30300 train_loss: 3.769
+[36/90] val_loss: 3.750
+saved
+[37/90] step: 30400 train_loss: 3.754
+[37/90] step: 30500 train_loss: 3.740
+[37/90] step: 30600 train_loss: 3.749
+[37/90] step: 30700 train_loss: 3.745
+[37/90] step: 30800 train_loss: 3.752
+[37/90] step: 30900 train_loss: 3.762
+[37/90] step: 31000 train_loss: 3.752
+[37/90] step: 31100 train_loss: 3.736
+[37/90] val_loss: 3.747
+saved
+[38/90] step: 31200 train_loss: 3.725
+[38/90] step: 31300 train_loss: 3.744
+[38/90] step: 31400 train_loss: 3.761
+[38/90] step: 31500 train_loss: 3.756
+[38/90] step: 31600 train_loss: 3.744
+[38/90] step: 31700 train_loss: 3.729
+[38/90] step: 31800 train_loss: 3.748
+[38/90] step: 31900 train_loss: 3.765
+[38/90] val_loss: 3.743
+saved
+[39/90] step: 32000 train_loss: 3.720
+[39/90] step: 32100 train_loss: 3.744
+[39/90] step: 32200 train_loss: 3.750
+[39/90] step: 32300 train_loss: 3.738
+[39/90] step: 32400 train_loss: 3.742
+[39/90] step: 32500 train_loss: 3.722
+[39/90] step: 32600 train_loss: 3.718
+[39/90] step: 32700 train_loss: 3.730
+[39/90] val_loss: 3.738
+saved
+[40/90] step: 32800 train_loss: 3.781
+[40/90] step: 32900 train_loss: 3.744
+[40/90] step: 33000 train_loss: 3.727
+[40/90] step: 33100 train_loss: 3.742
+[40/90] step: 33200 train_loss: 3.767
+[40/90] step: 33300 train_loss: 3.752
+[40/90] step: 33400 train_loss: 3.736
+[40/90] step: 33500 train_loss: 3.736
+[40/90] step: 33600 train_loss: 3.744
+[40/90] val_loss: 3.736
+saved
+[41/90] step: 33700 train_loss: 3.739
+[41/90] step: 33800 train_loss: 3.776
+[41/90] step: 33900 train_loss: 3.726
+[41/90] step: 34000 train_loss: 3.737
+[41/90] step: 34100 train_loss: 3.723
+[41/90] step: 34200 train_loss: 3.716
+[41/90] step: 34300 train_loss: 3.718
+[41/90] step: 34400 train_loss: 3.727
+[41/90] val_loss: 3.732
+saved
+[42/90] step: 34500 train_loss: 3.728
+[42/90] step: 34600 train_loss: 3.733
+[42/90] step: 34700 train_loss: 3.750
+[42/90] step: 34800 train_loss: 3.735
+[42/90] step: 34900 train_loss: 3.739
+[42/90] step: 35000 train_loss: 3.720
+[42/90] step: 35100 train_loss: 3.726
+[42/90] step: 35200 train_loss: 3.719
+[42/90] val_loss: 3.725
+saved
+[43/90] step: 35300 train_loss: 3.720
+[43/90] step: 35400 train_loss: 3.723
+[43/90] step: 35500 train_loss: 3.728
+[43/90] step: 35600 train_loss: 3.723
+[43/90] step: 35700 train_loss: 3.719
+[43/90] step: 35800 train_loss: 3.727
+[43/90] step: 35900 train_loss: 3.723
+[43/90] step: 36000 train_loss: 3.729
+[43/90] val_loss: 3.727
+[44/90] step: 36100 train_loss: 3.731
+[44/90] step: 36200 train_loss: 3.714
+[44/90] step: 36300 train_loss: 3.716
+[44/90] step: 36400 train_loss: 3.708
+[44/90] step: 36500 train_loss: 3.732
+[44/90] step: 36600 train_loss: 3.721
+[44/90] step: 36700 train_loss: 3.728
+[44/90] step: 36800 train_loss: 3.740
+[44/90] val_loss: 3.724
+saved
+[45/90] step: 36900 train_loss: 3.737
+[45/90] step: 37000 train_loss: 3.724
+[45/90] step: 37100 train_loss: 3.751
+[45/90] step: 37200 train_loss: 3.725
+[45/90] step: 37300 train_loss: 3.724
+[45/90] step: 37400 train_loss: 3.715
+[45/90] step: 37500 train_loss: 3.699
+[45/90] step: 37600 train_loss: 3.717
+[45/90] step: 37700 train_loss: 3.708
+[45/90] val_loss: 3.722
+saved
+[46/90] step: 37800 train_loss: 3.730
+[46/90] step: 37900 train_loss: 3.712
+[46/90] step: 38000 train_loss: 3.723
+[46/90] step: 38100 train_loss: 3.719
+[46/90] step: 38200 train_loss: 3.747
+[46/90] step: 38300 train_loss: 3.712
+[46/90] step: 38400 train_loss: 3.715
+[46/90] step: 38500 train_loss: 3.698
+[46/90] val_loss: 3.717
+saved
+[47/90] step: 38600 train_loss: 3.743
+[47/90] step: 38700 train_loss: 3.730
+[47/90] step: 38800 train_loss: 3.710
+[47/90] step: 38900 train_loss: 3.746
+[47/90] step: 39000 train_loss: 3.715
+[47/90] step: 39100 train_loss: 3.721
+[47/90] step: 39200 train_loss: 3.722
+[47/90] step: 39300 train_loss: 3.719
+[47/90] val_loss: 3.721
+[48/90] step: 39400 train_loss: 3.702
+[48/90] step: 39500 train_loss: 3.725
+[48/90] step: 39600 train_loss: 3.714
+[48/90] step: 39700 train_loss: 3.711
+[48/90] step: 39800 train_loss: 3.716
+[48/90] step: 39900 train_loss: 3.743
+[48/90] step: 40000 train_loss: 3.722
+[48/90] step: 40100 train_loss: 3.712
+[48/90] val_loss: 3.718
+[49/90] step: 40200 train_loss: 3.722
+[49/90] step: 40300 train_loss: 3.702
+[49/90] step: 40400 train_loss: 3.711
+[49/90] step: 40500 train_loss: 3.717
+[49/90] step: 40600 train_loss: 3.726
+[49/90] step: 40700 train_loss: 3.737
+[49/90] step: 40800 train_loss: 3.732
+[49/90] step: 40900 train_loss: 3.696
+[49/90] val_loss: 3.720
+[50/90] step: 41000 train_loss: 3.725
+[50/90] step: 41100 train_loss: 3.722
+[50/90] step: 41200 train_loss: 3.715
+[50/90] step: 41300 train_loss: 3.734
+[50/90] step: 41400 train_loss: 3.740
+[50/90] step: 41500 train_loss: 3.715
+[50/90] step: 41600 train_loss: 3.716
+[50/90] step: 41700 train_loss: 3.729
+[50/90] step: 41800 train_loss: 3.761
+[50/90] val_loss: 3.715
+saved
+[51/90] step: 41900 train_loss: 3.710
+[51/90] step: 42000 train_loss: 3.689
+[51/90] step: 42100 train_loss: 3.695
+[51/90] step: 42200 train_loss: 3.712
+[51/90] step: 42300 train_loss: 3.724
+[51/90] step: 42400 train_loss: 3.717
+[51/90] step: 42500 train_loss: 3.732
+[51/90] step: 42600 train_loss: 3.712
+[51/90] val_loss: 3.715
+saved
+[52/90] step: 42700 train_loss: 3.711
+[52/90] step: 42800 train_loss: 3.702
+[52/90] step: 42900 train_loss: 3.737
+[52/90] step: 43000 train_loss: 3.740
+[52/90] step: 43100 train_loss: 3.696
+[52/90] step: 43200 train_loss: 3.695
+[52/90] step: 43300 train_loss: 3.744
+[52/90] step: 43400 train_loss: 3.702
+[52/90] val_loss: 3.710
+saved
+[53/90] step: 43500 train_loss: 3.718
+[53/90] step: 43600 train_loss: 3.728
+[53/90] step: 43700 train_loss: 3.738
+[53/90] step: 43800 train_loss: 3.702
+[53/90] step: 43900 train_loss: 3.704
+[53/90] step: 44000 train_loss: 3.705
+[53/90] step: 44100 train_loss: 3.717
+[53/90] step: 44200 train_loss: 3.695
+[53/90] val_loss: 3.710
+[54/90] step: 44300 train_loss: 3.710
+[54/90] step: 44400 train_loss: 3.719
+[54/90] step: 44500 train_loss: 3.696
+[54/90] step: 44600 train_loss: 3.707
+[54/90] step: 44700 train_loss: 3.710
+[54/90] step: 44800 train_loss: 3.703
+[54/90] step: 44900 train_loss: 3.723
+[54/90] step: 45000 train_loss: 3.728
+[54/90] val_loss: 3.706
+saved
+[55/90] step: 45100 train_loss: 3.711
+[55/90] step: 45200 train_loss: 3.695
+[55/90] step: 45300 train_loss: 3.687
+[55/90] step: 45400 train_loss: 3.721
+[55/90] step: 45500 train_loss: 3.726
+[55/90] step: 45600 train_loss: 3.710
+[55/90] step: 45700 train_loss: 3.712
+[55/90] step: 45800 train_loss: 3.687
+[55/90] step: 45900 train_loss: 3.703
+[55/90] val_loss: 3.706
+[56/90] step: 46000 train_loss: 3.697
+[56/90] step: 46100 train_loss: 3.705
+[56/90] step: 46200 train_loss: 3.694
+[56/90] step: 46300 train_loss: 3.713
+[56/90] step: 46400 train_loss: 3.723
+[56/90] step: 46500 train_loss: 3.730
+[56/90] step: 46600 train_loss: 3.695
+[56/90] step: 46700 train_loss: 3.697
+[56/90] val_loss: 3.708
+[57/90] step: 46800 train_loss: 3.697
+[57/90] step: 46900 train_loss: 3.709
+[57/90] step: 47000 train_loss: 3.707
+[57/90] step: 47100 train_loss: 3.701
+[57/90] step: 47200 train_loss: 3.702
+[57/90] step: 47300 train_loss: 3.701
+[57/90] step: 47400 train_loss: 3.685
+[57/90] step: 47500 train_loss: 3.693
+[57/90] val_loss: 3.704
+saved
+[58/90] step: 47600 train_loss: 3.691
+[58/90] step: 47700 train_loss: 3.702
+[58/90] step: 47800 train_loss: 3.718
+[58/90] step: 47900 train_loss: 3.703
+[58/90] step: 48000 train_loss: 3.706
+[58/90] step: 48100 train_loss: 3.698
+[58/90] step: 48200 train_loss: 3.696
+[58/90] step: 48300 train_loss: 3.714
+[58/90] val_loss: 3.702
+saved
+[59/90] step: 48400 train_loss: 3.714
+[59/90] step: 48500 train_loss: 3.714
+[59/90] step: 48600 train_loss: 3.683
+[59/90] step: 48700 train_loss: 3.709
+[59/90] step: 48800 train_loss: 3.714
+[59/90] step: 48900 train_loss: 3.704
+[59/90] step: 49000 train_loss: 3.709
+[59/90] step: 49100 train_loss: 3.699
+[59/90] val_loss: 3.700
+saved
+[60/90] step: 49200 train_loss: 3.699
+[60/90] step: 49300 train_loss: 3.682
+[60/90] step: 49400 train_loss: 3.702
+[60/90] step: 49500 train_loss: 3.688
+[60/90] step: 49600 train_loss: 3.692
+[60/90] step: 49700 train_loss: 3.708
+[60/90] step: 49800 train_loss: 3.702
+[60/90] step: 49900 train_loss: 3.693
+[60/90] step: 50000 train_loss: 3.674
+[60/90] val_loss: 3.705
+[61/90] step: 50100 train_loss: 3.718
+[61/90] step: 50200 train_loss: 3.702
+[61/90] step: 50300 train_loss: 3.710
+[61/90] step: 50400 train_loss: 3.697
+[61/90] step: 50500 train_loss: 3.687
+[61/90] step: 50600 train_loss: 3.704
+[61/90] step: 50700 train_loss: 3.695
+[61/90] step: 50800 train_loss: 3.708
+[61/90] val_loss: 3.700
+saved
+[62/90] step: 50900 train_loss: 3.705
+[62/90] step: 51000 train_loss: 3.701
+[62/90] step: 51100 train_loss: 3.711
+[62/90] step: 51200 train_loss: 3.691
+[62/90] step: 51300 train_loss: 3.712
+[62/90] step: 51400 train_loss: 3.716
+[62/90] step: 51500 train_loss: 3.712
+[62/90] step: 51600 train_loss: 3.726
+[62/90] val_loss: 3.700
+saved
+[63/90] step: 51700 train_loss: 3.682
+[63/90] step: 51800 train_loss: 3.678
+[63/90] step: 51900 train_loss: 3.697
+[63/90] step: 52000 train_loss: 3.685
+[63/90] step: 52100 train_loss: 3.692
+[63/90] step: 52200 train_loss: 3.704
+[63/90] step: 52300 train_loss: 3.695
+[63/90] step: 52400 train_loss: 3.685
+[63/90] val_loss: 3.700
+[64/90] step: 52500 train_loss: 3.701
+[64/90] step: 52600 train_loss: 3.696
+[64/90] step: 52700 train_loss: 3.706
+[64/90] step: 52800 train_loss: 3.707
+[64/90] step: 52900 train_loss: 3.727
+[64/90] step: 53000 train_loss: 3.692
+[64/90] step: 53100 train_loss: 3.698
+[64/90] step: 53200 train_loss: 3.717
+[64/90] val_loss: 3.700
+saved
+[65/90] step: 53300 train_loss: 3.708
+[65/90] step: 53400 train_loss: 3.693
+[65/90] step: 53500 train_loss: 3.682
+[65/90] step: 53600 train_loss: 3.699
+[65/90] step: 53700 train_loss: 3.680
+[65/90] step: 53800 train_loss: 3.715
+[65/90] step: 53900 train_loss: 3.702
+[65/90] step: 54000 train_loss: 3.699
+[65/90] step: 54100 train_loss: 3.697
+[65/90] val_loss: 3.699
+saved
+[66/90] step: 54200 train_loss: 3.691
+[66/90] step: 54300 train_loss: 3.689
+[66/90] step: 54400 train_loss: 3.697
+[66/90] step: 54500 train_loss: 3.688
+[66/90] step: 54600 train_loss: 3.706
+[66/90] step: 54700 train_loss: 3.709
+[66/90] step: 54800 train_loss: 3.688
+[66/90] step: 54900 train_loss: 3.694
+[66/90] val_loss: 3.698
+saved
+[67/90] step: 55000 train_loss: 3.703
+[67/90] step: 55100 train_loss: 3.723
+[67/90] step: 55200 train_loss: 3.695
+[67/90] step: 55300 train_loss: 3.718
+[67/90] step: 55400 train_loss: 3.718
+[67/90] step: 55500 train_loss: 3.692
+[67/90] step: 55600 train_loss: 3.678
+[67/90] step: 55700 train_loss: 3.713
+[67/90] val_loss: 3.696
+saved
+[68/90] step: 55800 train_loss: 3.697
+[68/90] step: 55900 train_loss: 3.698
+[68/90] step: 56000 train_loss: 3.678
+[68/90] step: 56100 train_loss: 3.687
+[68/90] step: 56200 train_loss: 3.706
+[68/90] step: 56300 train_loss: 3.683
+[68/90] step: 56400 train_loss: 3.691
+[68/90] step: 56500 train_loss: 3.692
+[68/90] val_loss: 3.696
+saved
+[69/90] step: 56600 train_loss: 3.695
+[69/90] step: 56700 train_loss: 3.686
+[69/90] step: 56800 train_loss: 3.696
+[69/90] step: 56900 train_loss: 3.702
+[69/90] step: 57000 train_loss: 3.698
+[69/90] step: 57100 train_loss: 3.702
+[69/90] step: 57200 train_loss: 3.708
+[69/90] step: 57300 train_loss: 3.713
+[69/90] val_loss: 3.694
+saved
+[70/90] step: 57400 train_loss: 3.700
+[70/90] step: 57500 train_loss: 3.679
+[70/90] step: 57600 train_loss: 3.695
+[70/90] step: 57700 train_loss: 3.709
+[70/90] step: 57800 train_loss: 3.688
+[70/90] step: 57900 train_loss: 3.675
+[70/90] step: 58000 train_loss: 3.687
+[70/90] step: 58100 train_loss: 3.680
+[70/90] step: 58200 train_loss: 3.701
+[70/90] val_loss: 3.696
+[71/90] step: 58300 train_loss: 3.694
+[71/90] step: 58400 train_loss: 3.688
+[71/90] step: 58500 train_loss: 3.704
+[71/90] step: 58600 train_loss: 3.683
+[71/90] step: 58700 train_loss: 3.688
+[71/90] step: 58800 train_loss: 3.701
+[71/90] step: 58900 train_loss: 3.686
+[71/90] step: 59000 train_loss: 3.669
+[71/90] val_loss: 3.695
+[72/90] step: 59100 train_loss: 3.687
+[72/90] step: 59200 train_loss: 3.696
+[72/90] step: 59300 train_loss: 3.676
+[72/90] step: 59400 train_loss: 3.687
+[72/90] step: 59500 train_loss: 3.701
+[72/90] step: 59600 train_loss: 3.702
+[72/90] step: 59700 train_loss: 3.679
+[72/90] step: 59800 train_loss: 3.687
+[72/90] val_loss: 3.691
+saved
+[73/90] step: 59900 train_loss: 3.683
+[73/90] step: 60000 train_loss: 3.686
+[73/90] step: 60100 train_loss: 3.694
+[73/90] step: 60200 train_loss: 3.707
+[73/90] step: 60300 train_loss: 3.692
+[73/90] step: 60400 train_loss: 3.697
+[73/90] step: 60500 train_loss: 3.684
+[73/90] step: 60600 train_loss: 3.678
+[73/90] val_loss: 3.691
+[74/90] step: 60700 train_loss: 3.725
+[74/90] step: 60800 train_loss: 3.673
+[74/90] step: 60900 train_loss: 3.701
+[74/90] step: 61000 train_loss: 3.682
+[74/90] step: 61100 train_loss: 3.675
+[74/90] step: 61200 train_loss: 3.683
+[74/90] step: 61300 train_loss: 3.697
+[74/90] step: 61400 train_loss: 3.686
+[74/90] val_loss: 3.694
+[75/90] step: 61500 train_loss: 3.676
+[75/90] step: 61600 train_loss: 3.696
+[75/90] step: 61700 train_loss: 3.711
+[75/90] step: 61800 train_loss: 3.707
+[75/90] step: 61900 train_loss: 3.694
+[75/90] step: 62000 train_loss: 3.688
+[75/90] step: 62100 train_loss: 3.693
+[75/90] step: 62200 train_loss: 3.695
+[75/90] step: 62300 train_loss: 3.699
+[75/90] val_loss: 3.690
+saved
+[76/90] step: 62400 train_loss: 3.683
+[76/90] step: 62500 train_loss: 3.700
+[76/90] step: 62600 train_loss: 3.698
+[76/90] step: 62700 train_loss: 3.680
+[76/90] step: 62800 train_loss: 3.692
+[76/90] step: 62900 train_loss: 3.702
+[76/90] step: 63000 train_loss: 3.696
+[76/90] step: 63100 train_loss: 3.716
+[76/90] val_loss: 3.691
+[77/90] step: 63200 train_loss: 3.724
+[77/90] step: 63300 train_loss: 3.686
+[77/90] step: 63400 train_loss: 3.677
+[77/90] step: 63500 train_loss: 3.676
+[77/90] step: 63600 train_loss: 3.682
+[77/90] step: 63700 train_loss: 3.699
+[77/90] step: 63800 train_loss: 3.694
+[77/90] step: 63900 train_loss: 3.697
+[77/90] val_loss: 3.690
+[78/90] step: 64000 train_loss: 3.688
+[78/90] step: 64100 train_loss: 3.686
+[78/90] step: 64200 train_loss: 3.705
+[78/90] step: 64300 train_loss: 3.706
+[78/90] step: 64400 train_loss: 3.700
+[78/90] step: 64500 train_loss: 3.686
+[78/90] step: 64600 train_loss: 3.689
+[78/90] step: 64700 train_loss: 3.689
+[78/90] val_loss: 3.689
+saved
+[79/90] step: 64800 train_loss: 3.689
+[79/90] step: 64900 train_loss: 3.697
+[79/90] step: 65000 train_loss: 3.681
+[79/90] step: 65100 train_loss: 3.670
+[79/90] step: 65200 train_loss: 3.691
+[79/90] step: 65300 train_loss: 3.691
+[79/90] step: 65400 train_loss: 3.689
+[79/90] step: 65500 train_loss: 3.708
+[79/90] val_loss: 3.689
+[80/90] step: 65600 train_loss: 3.687
+[80/90] step: 65700 train_loss: 3.696
+[80/90] step: 65800 train_loss: 3.665
+[80/90] step: 65900 train_loss: 3.706
+[80/90] step: 66000 train_loss: 3.700
+[80/90] step: 66100 train_loss: 3.696
+[80/90] step: 66200 train_loss: 3.698
+[80/90] step: 66300 train_loss: 3.682
+[80/90] step: 66400 train_loss: 3.698
+[80/90] val_loss: 3.688
+saved
+[81/90] step: 66500 train_loss: 3.682
+[81/90] step: 66600 train_loss: 3.709
+[81/90] step: 66700 train_loss: 3.689
+[81/90] step: 66800 train_loss: 3.704
+[81/90] step: 66900 train_loss: 3.679
+[81/90] step: 67000 train_loss: 3.695
+[81/90] step: 67100 train_loss: 3.684
+[81/90] step: 67200 train_loss: 3.680
+[81/90] val_loss: 3.689
+[82/90] step: 67300 train_loss: 3.676
+[82/90] step: 67400 train_loss: 3.681
+[82/90] step: 67500 train_loss: 3.688
+[82/90] step: 67600 train_loss: 3.681
+[82/90] step: 67700 train_loss: 3.691
+[82/90] step: 67800 train_loss: 3.671
+[82/90] step: 67900 train_loss: 3.687
+[82/90] step: 68000 train_loss: 3.702
+[82/90] val_loss: 3.690
+[83/90] step: 68100 train_loss: 3.675
+[83/90] step: 68200 train_loss: 3.685
+[83/90] step: 68300 train_loss: 3.681
+[83/90] step: 68400 train_loss: 3.682
+[83/90] step: 68500 train_loss: 3.687
+[83/90] step: 68600 train_loss: 3.690
+[83/90] step: 68700 train_loss: 3.681
+[83/90] step: 68800 train_loss: 3.709
+[83/90] val_loss: 3.688
+saved
+[84/90] step: 68900 train_loss: 3.680
+[84/90] step: 69000 train_loss: 3.682
+[84/90] step: 69100 train_loss: 3.702
+[84/90] step: 69200 train_loss: 3.690
+[84/90] step: 69300 train_loss: 3.683
+[84/90] step: 69400 train_loss: 3.689
+[84/90] step: 69500 train_loss: 3.686
+[84/90] step: 69600 train_loss: 3.672
+[84/90] val_loss: 3.689
+[85/90] step: 69700 train_loss: 3.690
+[85/90] step: 69800 train_loss: 3.686
+[85/90] step: 69900 train_loss: 3.675
+[85/90] step: 70000 train_loss: 3.696
+[85/90] step: 70100 train_loss: 3.699
+[85/90] step: 70200 train_loss: 3.701
+[85/90] step: 70300 train_loss: 3.692
+[85/90] step: 70400 train_loss: 3.687
+[85/90] step: 70500 train_loss: 3.688
+[85/90] val_loss: 3.687
+saved
+[86/90] step: 70600 train_loss: 3.692
+[86/90] step: 70700 train_loss: 3.675
+[86/90] step: 70800 train_loss: 3.705
+[86/90] step: 70900 train_loss: 3.688
+[86/90] step: 71000 train_loss: 3.683
+[86/90] step: 71100 train_loss: 3.670
+[86/90] step: 71200 train_loss: 3.692
+[86/90] step: 71300 train_loss: 3.669
+[86/90] val_loss: 3.689
+[87/90] step: 71400 train_loss: 3.689
+[87/90] step: 71500 train_loss: 3.695
+[87/90] step: 71600 train_loss: 3.692
+[87/90] step: 71700 train_loss: 3.675
+[87/90] step: 71800 train_loss: 3.714
+[87/90] step: 71900 train_loss: 3.702
+[87/90] step: 72000 train_loss: 3.666
+[87/90] step: 72100 train_loss: 3.681
+[87/90] val_loss: 3.684
+saved
+[88/90] step: 72200 train_loss: 3.683
+[88/90] step: 72300 train_loss: 3.685
+[88/90] step: 72400 train_loss: 3.678
+[88/90] step: 72500 train_loss: 3.710
+[88/90] step: 72600 train_loss: 3.689
+[88/90] step: 72700 train_loss: 3.685
+[88/90] step: 72800 train_loss: 3.696
+[88/90] step: 72900 train_loss: 3.690
+[88/90] val_loss: 3.686
+[89/90] step: 73000 train_loss: 3.682
+[89/90] step: 73100 train_loss: 3.681
+[89/90] step: 73200 train_loss: 3.683
+[89/90] step: 73300 train_loss: 3.669
+[89/90] step: 73400 train_loss: 3.728
+[89/90] step: 73500 train_loss: 3.688
+[89/90] step: 73600 train_loss: 3.673
+[89/90] step: 73700 train_loss: 3.682
+[89/90] val_loss: 3.688
