@@ -82,7 +82,7 @@ def train(train_index, milnet, criterion, optimizer, args):
         loss.backward()
         optimizer.step()
         total_loss = total_loss + loss.item()
-        sys.stdout.write('\r Training bag [%d/%d] bag loss: %.4f' % (i, len(train_index), loss.item()))
+#         sys.stdout.write('\r Training bag [%d/%d] bag loss: %.4f' % (i, len(train_index), loss.item()))
     return total_loss / len(train_index)
 
 def dropout_patches(feats, p):
@@ -164,12 +164,15 @@ def optimal_thresh(fpr, tpr, thresholds, p=0):
 
 def main():
     parser = argparse.ArgumentParser(description='Train DSMIL on 20x patch features learned by SimCLR')
+    #to finetune
+    parser.add_argument('--lr', default=0.0002, type=float, help='Initial learning rate [0.0002]')
+    parser.add_argument('--weight_decay', default=5e-3, type=float, help='Weight decay [5e-3]')
+    parser.add_argument('--Tmax',default=200,type=int,help='Tmax used in CosineAnnealingLR,choose from [200,100,50]')
+    #fixed args
     parser.add_argument('--num_classes', default=2, type=int, help='Number of output classes [2]')
     parser.add_argument('--feats_size', default=512, type=int, help='Dimension of the feature size [512]')
-    parser.add_argument('--lr', default=0.0002, type=float, help='Initial learning rate [0.0002]')
     parser.add_argument('--num_epochs', default=200, type=int, help='Number of total training epochs [40|200]')
-    parser.add_argument('--gpu_index', type=str, nargs='+', default='0', help='GPU ID(s) [0]')
-    parser.add_argument('--weight_decay', default=5e-3, type=float, help='Weight decay [5e-3]')
+    parser.add_argument('--gpu_index', type=str, nargs='+', default='0,1,2,3', help='GPU ID(s) [0]')
     parser.add_argument('--model', default='dsmil', type=str, help='MIL model [dsmil]')
     parser.add_argument('--dropout_patch', default=0, type=float, help='Patch dropout rate [0]')
     parser.add_argument('--dropout_node', default=0, type=float, help='Bag classifier dropout rate [0]')
@@ -198,7 +201,7 @@ def main():
     criterion = nn.BCEWithLogitsLoss()
     
     optimizer = torch.optim.Adam(milnet.parameters(), lr=args.lr, betas=(0.5, 0.9), weight_decay=args.weight_decay)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.num_epochs, 0.000005)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, args.Tmax, 0.000005)
     
 #     if args.dataset == 'TCGA-lung-default':
 #         bags_csv = 'datasets/tcga-dataset/TCGA.csv'
@@ -242,3 +245,6 @@ def main():
 
 if __name__ == '__main__':
     main()
+    
+#saved form:(args.lr,args.weight_decay,args.Tmax,model.state_dict(),best_auc)
+#todo:def seed()
