@@ -5,3 +5,5 @@
 /config/data_segmentation_csv/*
 
 /processing/simclr_feature_extractor/runs/Apr20_10-20-33_ubuntu-T640/checkpoints/*
+
+/out/5_classifier/*
