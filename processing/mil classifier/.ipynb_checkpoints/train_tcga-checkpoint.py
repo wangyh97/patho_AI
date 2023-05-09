@@ -194,7 +194,7 @@ def main():
     #to finetune
     parser.add_argument('--lr', default=0.0002, type=float, help='Initial learning rate [0.0002]')
     parser.add_argument('--weight_decay', default=5e-3, type=float, help='Weight decay [5e-3]')
-    parser.add_argument('--Tmax',default=200,type=int,help='Tmax used in CosineAnnealingLR,choose from [200,100,50]')
+    parser.add_argument('--Tmax',default=50,type=int,help='Tmax used in CosineAnnealingLR,choose from [200,100,50]')
     #fixed args
     parser.add_argument('--num_classes', default=2, type=int, help='Number of output classes [2]')
     parser.add_argument('--feats_size', default=512, type=int, help='Dimension of the feature size [512]')
@@ -205,6 +205,7 @@ def main():
     parser.add_argument('--dropout_node', default=0, type=float, help='Bag classifier dropout rate [0]')
     parser.add_argument('--non_linearity', default=1, type=float, help='Additional nonlinear operation [0]')
     parser.add_argument('--average', type=bool, default=True, help='Average the score of max-pooling and bag aggregating')
+    parser.add_argument('--run',type=str,help='run number for documentation, saving results in file: results{run}.txt')
     args = parser.parse_args()
 #     gpu_ids = args.gpu_index
     os.environ['CUDA_VISIBLE_DEVICES']= str(args.gpu_index)
@@ -300,7 +301,7 @@ def main():
 #             print('Best model saved at: ' + save_name)
             print('Best_avg_auc thresholds ===>>> '+ '|'.join('class-{}>>{}'.format(*k) for k in enumerate(thresholds_optimal)))
             print('\n best avg_auc ===>>>'+ '|'.join('class-{}>>{}'.format(*k) for k in enumerate(aucs)))
-    with open('reselts.txt','a+') as f:
+    with open(f'results_{args.run}.txt','a+') as f:
         f.write(f'{args.lr},{args.weight_decay},{args.Tmax},{best_score},{best_auc},{best_avg_auc} \n')
             
 
