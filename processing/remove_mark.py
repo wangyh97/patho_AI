@@ -58,7 +58,7 @@ def remove_mark_tile(pen_marks,scale:['5X','10X','20X','40X'],tissue_type:['T','
     for index in pen_marks:
         uuid = df['dir_uuid'][index]
         CN_patches_path = glob.glob(f'/mnt/wangyh/CN_patches/*/{uuid}/{scale}/{tissue_type}*')
-        count += len(CN_patches_path)
+        count += len(CN_patches_path) 
         CN_patches.append(CN_patches_path)
     for obj in CN_patches:
         tifs = visualization.path_to_img_array(obj)
