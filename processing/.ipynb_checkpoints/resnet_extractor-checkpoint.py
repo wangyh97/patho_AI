@@ -44,8 +44,9 @@ class ResNet_extractor(nn.Module):
 def main():
     #args
     parser = argparse.ArgumentParser(description='feature extraction using pretrained Resnet18')
-    parser.add_argument('--gpu', type=str, default='0', help='GPU device')
+    parser.add_argument('--gpu', type=str, default='0', help='GPU device,[0]')
     parser.add_argument('--scale',type=int,help='scale of slides to be extracted')
+    parser.add_argument('--layers',type=int,default=18,help='layers of resnet,choose from[18,34,50,101],[18]')
     args = parser.parse_args()
     
     #load data
@@ -53,7 +54,7 @@ def main():
     
     #basic configuration
     os.environ['CUDA_VISIBLE_DEVICES'] = '0,1,2,3'
-    save_dir = '../data/pretrained_resnet18'
+    save_dir = f'../data/pretrained_resnet{args.layers}'
     os.makedirs(save_dir, exist_ok=True)
     
     data_transform = transforms.Compose([transforms.Resize(224),
@@ -64,7 +65,7 @@ def main():
     N = data_df.shape[0]
     
     #load model
-    model = ResNet_extractor(layers=18)
+    model = ResNet_extractor(layers=args.layers)
     if len(args.gpu) > 1:
         model = torch.nn.DataParallel(model, device_ids=eval(args.gpu))
     model.cuda()
