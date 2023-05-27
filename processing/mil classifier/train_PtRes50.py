@@ -17,28 +17,13 @@ from collections import OrderedDict
 import time
 
 '''
-####################################
-2023-5-11 train with resnet18 extracted features:
-    read from new feature files, rewrite relative path due to difference between sh.file & py.file in path
-####################################
-2023-5-14 updated:
-    a. 重构了train_ptres/train_tcga，加入--record参数，默认为False模式（参数寻找模式），若为True则为模型获得模式，并进行：
-        i. 激活tensorboard，将文件储存在：f'run/lrwdT_{args.lr}_{args.weight_decay}_{args.Tmax}'文件夹，每次训练会获得一个events
-        ii. 记录模型，模型保存在：f'weights/lrwdT_{args.lr}_{args.weight_decay}_{args.Tmax}'文件夹，获得：
-            1) Best_score.pth
-            2) Best_auc.pth
-            3) Best_avg_auc.pth
-    *** 改动在train_tcga同步
-2023-5-15 updated:
-    writer.add_scalar('val_loss',test_loss_bag,epoch)
-2023-5-16 update:
-    change the naming strategy of saved pth files
+read features from PtRes50, no other change
 '''
 #load data
 
 #=====>>>> current working dir is where the bash file located, not the executed py file <<<<==============
 
-features = np.load('../../../data/pretrained_resnet18/10X_full_slide_features_PtRes18.npy',allow_pickle=True).item()
+features = np.load('../../../data/pretrained_resnet50/10X_full_slide_features_PtRes50.npy',allow_pickle=True).item()
 # train = np.load('../../config/data_segmentation_csv/10X_tv_grouping.npy',allow_pickle=True).item()
 full = np.load('../../../config/data_segmentation_csv/10X_full.npy',allow_pickle=True).item()
 # train_index = list(train['tv_list'].index)
@@ -60,7 +45,6 @@ def set_seed(seed=10):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed) # if you are using multi-GPU.
-    print('seed set')
 #     torch.backends.cudnn.benchmark = False
 #     torch.backends.cudnn.deterministic = True
 
@@ -222,7 +206,7 @@ def main():
     args = parser.parse_args()
 #     gpu_ids = args.gpu_index
     os.environ['CUDA_VISIBLE_DEVICES']= str(args.gpu_index)
-    set_seed()
+    
     if args.model == 'dsmil':
         import dsmil as mil
     elif args.model == 'abmil':
@@ -353,6 +337,7 @@ def main():
 
 if __name__ == '__main__':
     tick = time.time()
+    set_seed()
     main()
     print(time.time()-tick)
     

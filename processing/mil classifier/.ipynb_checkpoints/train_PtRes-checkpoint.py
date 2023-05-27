@@ -29,6 +29,10 @@ import time
             2) Best_auc.pth
             3) Best_avg_auc.pth
     *** 改动在train_tcga同步
+2023-5-15 updated:
+    writer.add_scalar('val_loss',test_loss_bag,epoch)
+2023-5-16 update:
+    change the naming strategy of saved pth files
 '''
 #load data
 
@@ -56,6 +60,7 @@ def set_seed(seed=10):
     torch.manual_seed(seed)
     torch.cuda.manual_seed(seed)
     torch.cuda.manual_seed_all(seed) # if you are using multi-GPU.
+    print('seed set')
 #     torch.backends.cudnn.benchmark = False
 #     torch.backends.cudnn.deterministic = True
 
@@ -217,7 +222,7 @@ def main():
     args = parser.parse_args()
 #     gpu_ids = args.gpu_index
     os.environ['CUDA_VISIBLE_DEVICES']= str(args.gpu_index)
-    
+    set_seed()
     if args.model == 'dsmil':
         import dsmil as mil
     elif args.model == 'abmil':
@@ -251,11 +256,11 @@ def main():
     best_auc = 0
     best_avg_auc = 0
     
-    if args.record:
+    if args.record == True:
         writer = SummaryWriter(f'run/lrwdT_{args.lr}_{args.weight_decay}_{args.Tmax}')
         save_path = os.path.join('weights', f'lrwdT_{args.lr}_{args.weight_decay}_{args.Tmax}') # path saving models
         os.makedirs(save_path, exist_ok=True)
-        run = len(glob.glob(os.path.join(save_path, '*.pth')))
+#         run = len(glob.glob(os.path.join(save_path, '*.pth')))
         for epoch in range(1, args.num_epochs):
             train_index = shuffle(train_index)
             test_index = shuffle(test_index)
@@ -263,6 +268,7 @@ def main():
             train_loss_bag = train(train_index, milnet, criterion, optimizer, args) # iterate all bags
             test_loss_bag, avg_score, aucs, thresholds_optimal = test(test_index, milnet, criterion, optimizer, args)
             writer.add_scalar('train_loss',train_loss_bag,epoch)
+            writer.add_scalar('val_loss',test_loss_bag,epoch)
             writer.add_scalar('avg_score',avg_score,epoch)
             writer.add_scalar('class 0 aucs',aucs[0],epoch)
             writer.add_scalar('class_1 aucs',aucs[1],epoch)
@@ -273,7 +279,7 @@ def main():
 
             if current_score >= best_score:
                 best_score = current_score
-                save_name = os.path.join(save_path, str(run+1)+'best_score.pth')
+                save_name = os.path.join(save_path, 'best_score.pth')
                 torch.save(milnet.state_dict(), save_name)
 
                 print('Best model saved at: ' + save_name)
@@ -281,7 +287,7 @@ def main():
 
             if aucs[1] >= best_auc:
                 best_auc = aucs[1]
-                save_name = os.path.join(save_path, str(run+1)+'best_auc.pth')
+                save_name = os.path.join(save_path, 'best_auc.pth')
                 torch.save(milnet.state_dict(), save_name)
 
                 print('Best model saved at: ' + save_name)
@@ -290,7 +296,7 @@ def main():
 
             if sum(aucs) >= best_avg_auc:
                 best_avg_auc = sum(aucs)
-                save_name = os.path.join(save_path, str(run+1)+'best_avg_auc.pth')
+                save_name = os.path.join(save_path, 'best_avg_auc.pth')
                 torch.save(milnet.state_dict(), save_name)
 
                 print('Best model saved at: ' + save_name)
@@ -347,7 +353,6 @@ def main():
 
 if __name__ == '__main__':
     tick = time.time()
-    set_seed()
     main()
     print(time.time()-tick)
     

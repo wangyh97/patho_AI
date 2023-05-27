@@ -105,8 +105,8 @@ def main():
                 print(f'wrong in slide{i}, error as {e}')
                 unextracted.append(i)
 
-        np.save(os.path.join(save_dir,f'{args.scale}X_full_slide_features_PtRes18.npy'),slide_features)
-        np.save(os.path.join(save_dir,f'{args.scale}X_full_not_extracted_PtRes18.npy'),unextracted)
+        np.save(os.path.join(save_dir,f'{args.scale}X_full_slide_features_PtRes{args.layers}.npy'),slide_features)
+        np.save(os.path.join(save_dir,f'{args.scale}X_full_not_extracted_PtRes{args.layers}.npy'),unextracted)
         print(f'{len(unextracted)} unextracted,\nindexes are {unextracted},saved in file',end = '\n')
         print('file saved')
         

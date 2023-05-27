@@ -260,6 +260,7 @@ def main():
             train_loss_bag = train(train_index, milnet, criterion, optimizer, args) # iterate all bags
             test_loss_bag, avg_score, aucs, thresholds_optimal = test(test_index, milnet, criterion, optimizer, args)
             writer.add_scalar('train_loss',train_loss_bag,epoch)
+            writer.add_scalar('val_loss',test_loss_bag,epoch)
             writer.add_scalar('avg_score',avg_score,epoch)
             writer.add_scalar('class 0 aucs',aucs[0],epoch)
             writer.add_scalar('class_1 aucs',aucs[1],epoch)

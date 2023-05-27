@@ -7,3 +7,7 @@
 /processing/simclr_feature_extractor/runs/Apr20_10-20-33_ubuntu-T640/checkpoints/*
 
 /out/5_classifier/*
+
+/processing/mil classifier/hyperparam_select_batch*
+
+/processing/mil classifier/fe_eval*
