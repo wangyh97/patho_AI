@@ -109,6 +109,22 @@ def main():
         np.save(os.path.join(save_dir,f'{args.scale}X_full_not_extracted_PtRes{args.layers}.npy'),unextracted)
         print(f'{len(unextracted)} unextracted,\nindexes are {unextracted},saved in file',end = '\n')
         print('file saved')
+
+        '''
+        features
+        {...
+         'index97':(...),
+         'index98':('bc09ee8e-ff24-4635-852f-84cabce80c0f',
+                    'L',
+                    tensor([[-0.0237,  0.0373, -0.0691,  ..., -0.2615, -0.1424,  0.0990],
+                            [ 0.0070, -0.0482,  0.1075,  ..., -0.1204, -0.0039, -0.1455],
+                            [ 0.1838, -0.0326,  0.1583,  ..., -0.1497, -0.0781, -0.0553],
+                            [-0.0888,  0.1956, -0.2567,  ...,  0.0945,  0.1830, -0.0325],
+                            [-0.3277, -0.1676, -0.2626,  ..., -0.2340,  0.0220, -0.1692]])),
+         'index99':(...)
+         ...
+          }
+        '''
         
 if __name__ == '__main__':
     main()
