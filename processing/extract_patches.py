@@ -9,17 +9,9 @@
 # In[4]:
 # from numba import jit,njit
 
-openslide_path = {'desktop':r'D:/edge下载/openslide-win64-20220811/bin',
-                'laptop':r'E:/openslide-win64-20171122/bin'}
 import os
 from pathlib import Path
-if hasattr(os,'add_dll_directory'):
-    for i in openslide_path.values():
-        if Path(i).exists():
-            with os.add_dll_directory(Path(i)):
-                import openslide
-else:
-    import openslide
+import openslide
 from openslide.deepzoom import DeepZoomGenerator
 import numpy as np
 #import matplotlib.pyplot as plt
@@ -151,7 +143,7 @@ def Annotation(slide,path,save_path=None,rule=False,save=False):
         #exclude_masks(rule)
     if save:
         export_masks(save_path)
-<<<<<<< HEAD
+
     
     if "artificial" not in classes:
         masks["artificial"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
@@ -162,7 +154,7 @@ def Annotation(slide,path,save_path=None,rule=False,save=False):
         masks["stroma"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
 
     return masks 
-=======
+
     if "artificial" not in classes:
         masks["artificial"] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
     if "necrosis" not in classes:
@@ -170,7 +162,7 @@ def Annotation(slide,path,save_path=None,rule=False,save=False):
     if 'stroma' not in classes:
         masks['stroma'] = np.zeros((wsi_height,wsi_width),dtype=np.uint8)
     return masks
->>>>>>> 42e40692fd7f25464809e49d62bfaff21bd386b2
+
 
 def show_thumb_mask(mask,size=512):
     #mask = masks[cls]
@@ -312,19 +304,19 @@ def extract_patches(levels,scales,tile_path,slide_tiles,tumor_tiles,tumor=True):
                         pass
         print("Done!")
     print("All levels processed!!")
-    
-working_dir = '/home/wangyh/uro_biomarker/patho_AI'
+
+
+
+working_dir = '/GPUFS/sysu_jhluo_1/wangyh/data/'
 os.chdir(working_dir)
-
-
-
-INDEX= 0
-
-n = 5
 
 # TCGA 388
 
 argv = sys.argv[1:]
+
+INDEX= 0
+n = 5
+
 try:
     opts,args = getopt.getopt(argv,"s:n:i:x:")
 except:
@@ -339,16 +331,6 @@ for opt,arg in opts:
     elif opt in ['-i']: ## 用INDEX 表示每个chunk的序数
         INDEX = int(arg)  #x后面承接一个数值,表示index
 
-
-# TILE_SIZE = 512
-
-# TODO:改classes
-# classes = ["nonprogress","progress"]
-
-# TODO：改tcga_path
-# tcga_path = "    "   #TCGA svs放置路径
-
-# 下面可弃用，没有多个图片源
 # all_paths = [zsyy_path,pufh_path,sysu_path,tcga_path]
 # all_patch_path = [f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}",f"Pathology/PUFH_cases_Patch_{TILE_SIZE}",f"Pathology/SYSUCC_cases_Patch_{TILE_SIZE}",f"Pathology/TCGA_cases_Patch_{TILE_SIZE}"]
 
@@ -358,61 +340,16 @@ LIMIT = False
 rule =  {"tumor":{"excludes":["artificial","stroma","necrosis"]},
         'stroma':{"excludes":['artificial','necrosis']}}
 scales = ['5X','10X','20X','40X']
-
-# slide_source = 'TCGA svs图片路径'
-# patch_path = '存放patch的路径'
-
-#slide_source = "Pathology/ZSYYCASES/zsyy-cases-new11-5"
-#patch_path = f"Pathology/ZSYY_cases_Patch_{TILE_SIZE}"
-#slide_source = all_paths[INDEX]
-#patch_path = all_patch_path[INDEX]
-
-# TODO:修改获取svspaths的路径表达
-#svs_paths = list(Path(slide_source).rglob("*.svs"))+list(Path(slide_source).rglob("*.tif"))  #获取TCGAsvs文件夹下的svspath路径，也可以直接从配置文件读取
-#slide_paths = [Path(slide).name for slide in glob.glob(f"{patch_path}/*/*/*") if not len(os.listdir(slide))==4] #可以直接读取配置文件，配置文件中经过标注的图片已标记
-
-
-# 下列不需要
-#svs_paths= np.load("Pathology-PRCC/Final/absolutePathForTrainset.npy",allow_pickle=True)
-#svs_labels = np.load("Pathology-PRCC/Final/labelForTrainset.npy",allow_pickle=True)
-#df = pd.read_csv("/GPUFS/sysu_jhluo_1/Pathology-PRCC/Final/train_cases_stage_3_PFS_3-7-filter-nan.csv")
-#"Pathology-PRCC/data/csvs/exValidation.csv"
-#"Pathology-PRCC/data/csvs/tcga.csv"
-#"Pathology-PRCC/data/csvs/tuning.csv"
+TILE_SIZE = 512
 
 #TODO:将svspath及svslabels存放在一个csv中
-df = pd.read_csv('/home/wangyh/uro_biomarker/patho_AI/config/full.csv')
+df = pd.read_csv('/GPUFS/sysu_jhluo_1/wangyh/project/BLCA_TMB/config/full.csv')   # well marked slides & slides with label的交集
 svs_paths = df['svs_paths']
 labels = df['TMB_H/L']
 uuid = df['dir_uuid']
-# In[7]:
-TILE_SIZE = 512
 
-patch_path = "/mnt/wangyh/TCGA_patches/"
-
-# len(svs_paths)
-
-# # i=??
-
-# In[ ]:
-# get_mask
-
-
-
-# In[5]:
-
-
-
-number = len(svs_paths)
-
-#if n*INDEX < number:
-#    svs_paths = svs_paths[n*(INDEX-1):n*i]
-    #labels = svs_labels[n*(i-1):n*i]
-#if n*INDEX >= number:
- #   svs_paths = svs_paths[n*(INDEX-1):]
-    #labels = svs_labels[n*(i-1):]
-svs_paths = svs_paths[n*(INDEX-1):n*INDEX] #不用加条件
-# In[7]:
+svs_paths = svs_paths[n*(INDEX-1):n*INDEX]
+patch_path = "/GPUFS/sysu_jhluo_1/wangyh/data/raw_patches"
 
 
 
